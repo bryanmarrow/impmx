@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-04-2022 a las 07:35:27
--- Versión del servidor: 10.4.18-MariaDB
--- Versión de PHP: 7.4.16
+-- Tiempo de generación: 06-04-2022 a las 01:47:18
+-- Versión del servidor: 10.4.20-MariaDB
+-- Versión de PHP: 7.4.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -157,6 +157,53 @@ INSERT INTO `tbl_estados` (`id`, `estado`) VALUES
 (31, 'Yucatán'),
 (32, 'Zacatecas');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tbl_solistas`
+--
+
+CREATE TABLE `tbl_solistas` (
+  `id` int(55) NOT NULL,
+  `categoria_insc` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `nombre_p` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `apellidos_p` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `fecha_nac` date DEFAULT NULL,
+  `email_p` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `genero_p` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `estado_p` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `ciudad_p` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `celular_p` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `fecharegistro_p` datetime DEFAULT NULL,
+  `cod_insc` varchar(25) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `codfullpass` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
+  `status` int(2) DEFAULT 0,
+  `invoiceid` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `paymenthmethod` varchar(20) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `nomcomprobante` text COLLATE utf8_spanish_ci NOT NULL,
+  `idform` varchar(15) COLLATE utf8_spanish_ci NOT NULL DEFAULT 'solistas'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Truncar tablas antes de insertar `tbl_solistas`
+--
+
+TRUNCATE TABLE `tbl_solistas`;
+--
+-- Volcado de datos para la tabla `tbl_solistas`
+--
+
+INSERT INTO `tbl_solistas` (`id`, `categoria_insc`, `nombre_p`, `apellidos_p`, `fecha_nac`, `email_p`, `genero_p`, `estado_p`, `ciudad_p`, `celular_p`, `fecharegistro_p`, `cod_insc`, `codfullpass`, `status`, `invoiceid`, `paymenthmethod`, `nomcomprobante`, `idform`) VALUES
+(1, '15', 'Bryan', 'Romero', '2022-04-28', 'bryan.martinez.romero@gmail.com', 'Masculino', '10', 'Puebla', '8183273074', '2022-04-05 14:42:03', 'QQDPDV4S6908', '6516516516', 0, NULL, NULL, '', 'solistas'),
+(2, '15', 'Bryan', 'Romero', '2022-04-28', 'bryan.martinez.romero@gmail.com', 'Masculino', '10', 'Puebla', '8183273074', '2022-04-05 14:42:23', 'SF2JAFTV1582', '6516516516', 0, NULL, NULL, '', 'solistas'),
+(3, '15', 'Bryan', 'Romero', '2022-04-28', 'bryan.martinez.romero@gmail.com', 'Masculino', '10', 'Puebla', '8183273074', '2022-04-05 14:43:27', 'XQ8E1512', '6516516516', 0, NULL, NULL, '', 'solistas'),
+(4, '15', 'Bryan', 'Romero', '2022-04-28', 'bryan.martinez.romero@gmail.com', 'Masculino', '10', 'Puebla', '8183273074', '2022-04-05 14:43:44', 'LKXM3372', '6516516516', 0, NULL, NULL, '', 'solistas'),
+(5, '15', 'Bryan', 'Romero', '2022-04-28', 'bryan.martinez.romero@gmail.com', 'Masculino', '10', 'Puebla', '8183273074', '2022-04-05 14:44:12', 'KYSW7656', '6516516516', 0, NULL, NULL, '', 'solistas'),
+(6, '15', 'Bryan', 'Romero', '2022-04-28', 'bryan.martinez.romero@gmail.com', 'Masculino', '10', 'Puebla', '8183273074', '2022-04-05 14:56:24', 'XNSN5119', '6516516516', 0, NULL, NULL, '', 'solistas'),
+(7, '15', 'Bryan', 'Romero', '2022-04-28', 'bryan.martinez.romero@gmail.com', 'Masculino', '10', 'Puebla', '8183273074', '2022-04-05 14:56:57', 'WHKY7035', '6516516516', 0, NULL, NULL, '', 'solistas'),
+(8, '15', 'Bryan', 'Romero', '2022-04-28', 'bryan.martinez.romero@gmail.com', 'Masculino', '10', 'Puebla', '8183273074', '2022-04-05 14:58:04', '26VG8450', '6516516516', 0, NULL, NULL, '', 'solistas'),
+(9, '12', 'Bryan', 'Romero', '2022-04-14', 'bryan.martinez.romero@gmail.com', 'Masculino', '11', 'Puebla', '8183273074', '2022-04-05 15:02:08', 'DG0J6996', '6516516516', 0, NULL, NULL, 'image_2022_04_04T21_20_50_518Z.png', 'solistas');
+
 --
 -- Índices para tablas volcadas
 --
@@ -174,6 +221,12 @@ ALTER TABLE `tbl_estados`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `tbl_solistas`
+--
+ALTER TABLE `tbl_solistas`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -188,6 +241,12 @@ ALTER TABLE `tbl_categorias`
 --
 ALTER TABLE `tbl_estados`
   MODIFY `id` int(55) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+
+--
+-- AUTO_INCREMENT de la tabla `tbl_solistas`
+--
+ALTER TABLE `tbl_solistas`
+  MODIFY `id` int(55) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
