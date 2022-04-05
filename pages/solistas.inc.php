@@ -6,8 +6,8 @@
                 <h3 class="pb-1">Registro | Solistas</h3>
             </div>
         </div>
-        <form class="formCampeonato needs-validation" novalidate>
-            <div class="row mb-3">            
+        <form class="formCampeonato needs-validation mb-5" novalidate>
+            <div class="row">            
                     <div class="col-lg-4">
                         <div class="form-group mb-2">
                             <label class="form-label">Código de confirmación de Full Pass</label>
@@ -55,7 +55,15 @@
                         <div class="form-group">
                             <label for="select-input" class="form-label">Estado</label>
                             <select class="form-select" name="estado_p" required>
-                                <option>Choose option...</option>
+                                <option value="">Seleccione una categoría</option>
+                                <?php 
+                                     $estados=$basededatosimpmx->connect()->prepare("SELECT * FROM tbl_estados order by estado ASC");
+                                     $estados->execute();
+                                     $Allestados=$estados->fetchAll();
+                                     foreach($Allestados as $estado){
+                                ?>
+                                    <option value="<?= $estado['id'] ?>" ><?= $estado['estado'] ?></option>
+                                <?php } ?>
                             </select>
                         </div>
                     </div>
@@ -63,7 +71,15 @@
                         <div class="form-group">
                             <label for="select-input" class="form-label">Categoría</label>
                             <select class="form-select" name="categoria_p" required>
-                                <option>Choose option...</option>
+                                <option value="">Seleccione una categoría</option>
+                                <?php 
+                                     $categorias=$basededatosimpmx->connect()->prepare("SELECT * FROM tbl_categorias WHERE tipo='$form' and status=0 order by categoria ASC");
+                                     $categorias->execute();
+                                     $Allcategorias=$categorias->fetchAll();
+                                     foreach($Allcategorias as $categoria){
+                                ?>
+                                    <option value="<?= $categoria['id'] ?>" ><?= $categoria['categoria'] ?></option>
+                                <?php } ?>
                             </select>
                         </div>
                     </div>

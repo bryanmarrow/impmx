@@ -9,10 +9,10 @@ formCampeonato.addEventListener('submit', function(e){
         console.log(`${name} = ${value}`);
     }
 
-    // if (formCampeonato.checkValidity() === false) {
-    //     formCampeonato.classList.add('was-validated');
+    if (formCampeonato.checkValidity() === false) {
+        formCampeonato.classList.add('was-validated');
         
-    // } else {
+    } else {
 
         $.ajax({
             type: 'POST',
@@ -28,7 +28,7 @@ formCampeonato.addEventListener('submit', function(e){
             }
         });
 
-    // }
+    }
 
     
 })

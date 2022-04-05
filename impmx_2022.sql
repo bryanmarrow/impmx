@@ -1,0 +1,195 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.0
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 05-04-2022 a las 07:35:27
+-- Versión del servidor: 10.4.18-MariaDB
+-- Versión de PHP: 7.4.16
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `impmx_2022`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tbl_categorias`
+--
+
+CREATE TABLE `tbl_categorias` (
+  `id` int(5) NOT NULL,
+  `categoria` varchar(255) DEFAULT NULL,
+  `tipo` varchar(20) DEFAULT NULL,
+  `status` int(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Truncar tablas antes de insertar `tbl_categorias`
+--
+
+TRUNCATE TABLE `tbl_categorias`;
+--
+-- Volcado de datos para la tabla `tbl_categorias`
+--
+
+INSERT INTO `tbl_categorias` (`id`, `categoria`, `tipo`, `status`) VALUES
+(1, 'Solista Salsa Masculino Profesional', 'solistas', 0),
+(2, 'Solista Salsa Masculino Semipro', 'solistas', 0),
+(3, 'Solista Salsa Masculino Amateur', 'solistas', 0),
+(4, 'Solista Salsa Masculino Junior (13-17 años)', 'solistas', 0),
+(5, 'Solista Salsa Masculino Infantil (8-12 años)', 'solistas', 0),
+(6, 'Solista Salsa Masculino Baby (4-7 años)', 'solistas', 0),
+(7, 'Solista Salsa Masculino Alumno', 'solistas', 0),
+(8, 'Solista Salsa Femenino Profesional', 'solistas', 0),
+(9, 'Solista Salsa Femenino Semipro', 'solistas', 0),
+(10, 'Solista Salsa Femenino Over 40/50 Femenino', 'solistas', 0),
+(11, 'Solista Salsa Femenino Amateur', 'solistas', 0),
+(12, 'Solista Salsa Femenino Junior (13-17 años)', 'solistas', 0),
+(13, 'Solista Salsa Femenino Infantil (8-12 años)', 'solistas', 0),
+(14, 'Solista Salsa Femenino Baby (4-7 años)', 'solistas', 0),
+(15, 'Solista Salsa Femenino Alumna', 'solistas', 0),
+(16, 'Solista Bachata Masculino Profesional', 'solistas', 0),
+(17, 'Solista Bachata Masculino Amateur', 'solistas', 0),
+(18, 'Solista Bachata Femenino Profesional', 'solistas', 0),
+(19, 'Solista Bachata Femenino Amateur', 'solistas', 0),
+(20, 'Parejas Salsa Profesional On 1', 'parejas', 0),
+(21, 'Parejas Salsa Profesional On 2', 'parejas', 0),
+(22, 'Parejas Salsa Profesional Cabaret', 'parejas', 0),
+(23, 'Parejas Salsa Semipro Rising Star', 'parejas', 0),
+(24, 'Parejas Salsa Pro-Am Hombre Pro/Mujer Amateur', 'parejas', 0),
+(25, 'Parejas Salsa Pro-Am Mujer Pro/Hombre Amateur', 'parejas', 0),
+(26, 'Parejas Salsa Amateur', 'parejas', 0),
+(27, 'Parejas Salsa Junior (13-17 años)', 'parejas', 0),
+(28, 'Parejas Salsa Infantil (8-12 años)', 'parejas', 0),
+(29, 'Parejas Salsa Alumnos', 'parejas', 0),
+(30, 'Parejas Salsa Over 65/75 Amateur', 'parejas', 0),
+(31, 'Parejas Salsa Over 65/75 Pro-Am', 'parejas', 0),
+(32, 'Parejas Salsa Grande Petit (Pro-Niñ@ edad 6-13 años)', 'parejas', 0),
+(33, 'Parejas Salsa Masculino Same Gender Open No Cabaret', 'parejas', 0),
+(34, 'Parejas Salsa Femenino Same Gender Open No Cabaret', 'parejas', 0),
+(35, 'Parejas Salsa Masculino Same Gender Open Cabaret', 'parejas', 0),
+(36, 'Parejas Salsa Femenino Same Gender Open Cabaret', 'parejas', 0),
+(37, 'Dúos Shines Salsa Masculino (Abierta)', 'parejas', 0),
+(38, 'Dúos Shines Salsa Femenino (Abierta)', 'parejas', 0),
+(39, 'Dúos Shines Salsa Masculino (Amateur)', 'parejas', 0),
+(40, 'Dúos Shines Salsa Femenino (Amateur)', 'parejas', 0),
+(41, 'Parejas Bachata Pro-Am Hombre Pro/Mujer Amateur', 'parejas', 0),
+(42, 'Parejas Bachata Pro-Am Mujer Pro/Hombre Amateur', 'parejas', 0),
+(43, 'Parejas Bachata Semi-Pro Rising Star', 'parejas', 0),
+(44, 'Parejas Bachata Amateur', 'parejas', 0),
+(45, 'Parejas Bachata Alumnos', 'parejas', 0),
+(46, 'Parejas Kizomba Fusión (Abierta)', 'parejas', 0),
+(47, 'Parejas Bachata Profesional No Cabaret', 'parejas', 0),
+(48, 'Parejas Bachata Profesional Cabaret', 'parejas', 0),
+(49, 'Grupos Salsa Amateur (4 parejas Min)', 'grupos', 0),
+(50, 'Grupos Salsa Pro-Am (4 parejas Min)', 'grupos', 0),
+(51, 'Grupos Salsa Alumnos (4 parejas Min)', 'grupos', 0),
+(52, 'Grupos Bachata Amateur (4 parejas Min)', 'grupos', 0),
+(53, 'Grupos Bachata Pro-Am (4 parejas Min)', 'grupos', 0),
+(54, 'Grupos Bachata Alumnos (4 parejas Min)', 'grupos', 0),
+(55, 'Team Shines Masculino Open (Int. 4-16 max)', 'grupos', 0),
+(56, 'Team Shines Femenino Open (Int. 4-16 max)', 'grupos', 0),
+(57, 'Team Shines Mixto Salsa', 'grupos', 0),
+(58, 'Team Shines Mixto Bachata', 'grupos', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tbl_estados`
+--
+
+CREATE TABLE `tbl_estados` (
+  `id` int(55) NOT NULL,
+  `estado` varchar(255) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Truncar tablas antes de insertar `tbl_estados`
+--
+
+TRUNCATE TABLE `tbl_estados`;
+--
+-- Volcado de datos para la tabla `tbl_estados`
+--
+
+INSERT INTO `tbl_estados` (`id`, `estado`) VALUES
+(1, 'Aguascalientes'),
+(2, 'Baja California'),
+(3, 'Baja California Sur'),
+(4, 'Campeche'),
+(5, 'Coahuila de Zaragoza'),
+(6, 'Colima'),
+(7, 'Chiapas'),
+(8, 'Chihuahua'),
+(9, 'Ciudad de México'),
+(10, 'Durango'),
+(11, 'Guanajuato'),
+(12, 'Guerrero'),
+(13, 'Hidalgo'),
+(14, 'Jalisco'),
+(15, 'México'),
+(16, 'Michoacán de Ocampo'),
+(17, 'Morelos'),
+(18, 'Nayarit'),
+(19, 'Nuevo León'),
+(20, 'Oaxaca'),
+(21, 'Puebla'),
+(22, 'Querétaro'),
+(23, 'Quintana Roo'),
+(24, 'San Luis Potosí'),
+(25, 'Sinaloa'),
+(26, 'Sonora'),
+(27, 'Tabasco'),
+(28, 'Tamaulipas'),
+(29, 'Tlaxcala'),
+(30, 'Veracruz'),
+(31, 'Yucatán'),
+(32, 'Zacatecas');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `tbl_categorias`
+--
+ALTER TABLE `tbl_categorias`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `tbl_estados`
+--
+ALTER TABLE `tbl_estados`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `tbl_categorias`
+--
+ALTER TABLE `tbl_categorias`
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+
+--
+-- AUTO_INCREMENT de la tabla `tbl_estados`
+--
+ALTER TABLE `tbl_estados`
+  MODIFY `id` int(55) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
