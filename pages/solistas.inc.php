@@ -10,8 +10,13 @@
             <div class="row">            
                     <div class="col-lg-4">
                         <div class="form-group mb-2">
-                            <label class="form-label">Código de confirmación de Full Pass</label>
-                            <input class="form-control" type="text" name="codfullpass" placeholder="Código de confirmación de Full Pass" required>
+                            <label class="form-label">Código de confirmación de Dancer Pass</label>
+                            <!-- <input class="form-control" id="codFullPass" type="text" name="codfullpass" value="SXWZO3996" placeholder="Código de confirmación de Full Pass" required> -->
+                            <div class="input-group">
+                                <input class="form-control" id="codFullPass" type="text" name="codfullpass" value="SXWZO3996" placeholder="Código de confirmación de Dancer Pass">
+                                <button class="btn btn-primary" id="btnValidarCodigo" type="button">Validar Código</button>
+                            </div>
+                            <div class="text-dark alertValidarCodigo"></div>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -107,10 +112,10 @@
                         </div>
                     </div>
                     <input type="hidden" value="<?= $form ?>" name="tipoForm">
+                    <input type="hidden" value="1" class="validCodigo" name="validCodigo">
             </div>
             <button class="btn btn-primary" type="submit">Enviar información</button>
         </form>
     </div>
 
-      
 </main>

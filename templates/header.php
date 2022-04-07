@@ -113,33 +113,33 @@
 
     <!-- Theme mode -->
     <script>
-      let mode = window.localStorage.getItem('mode'),
-          root = document.getElementsByTagName('html')[0];
-      if (mode !== undefined && mode === 'dark') {
-        root.classList.add('dark-mode');
-      } else {
-        root.classList.remove('dark-mode');
-      }
+      // let mode = window.localStorage.getItem('mode'),
+      //     root = document.getElementsByTagName('html')[0];
+      // if (mode !== undefined && mode === 'dark') {
+      //   root.classList.add('dark-mode');
+      // } else {
+      //   root.classList.remove('dark-mode');
+      // }
     </script>
 
     <!-- Page loading scripts -->
     <script>
-      (function () {
-        window.onload = function () {
-          const preloader = document.querySelector('.page-loading');
-          preloader.classList.remove('active');
-          setTimeout(function () {
-            preloader.remove();
-          }, 1000);
-        };
-      })();
+      // (function () {
+      //   window.onload = function () {
+      //     const preloader = document.querySelector('.page-loading');
+      //     preloader.classList.remove('active');
+      //     setTimeout(function () {
+      //       preloader.remove();
+      //     }, 1000);
+      //   };
+      // })();
     </script>
 
   </head>
 <body>
 
     <!-- Page loading spinner -->
-    <div class="page-loading active">
+    <div class="page-loading">
       <div class="page-loading-inner">
         <div class="page-spinner"></div><span>Loading...</span>
       </div>

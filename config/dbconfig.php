@@ -95,7 +95,12 @@ define('emailadminimpx', 'info@imperiomexico.com.mx');
 define('passwordadminimpx', 'Fexiaroga170330**');
 define('emailsuperadmin', 'bryan.martinez.romero@gmail.com');
 
-define ('FOLDER_SOLISTAS', '../comprobantes/solistas/' );
+define('FOLDER_SOLISTAS', '../comprobantes/solistas/' );
+define('YEAR_EVENT', 2022);
+define('NAME_EVENT', 'Imperio México');
+define('EMAIL_EVENT_CONTACTO','info@imperiomexico.com.mx');
+define('TAG_EVENT','#ImperioMéxico2022');
+
 
 
 
