@@ -2,6 +2,29 @@ const formCampeonato = document.querySelector('.formCampeonato');
 const btnValidarCodigo = document.getElementById('btnValidarCodigo');
 const preloader = document.querySelector('.page-loading');
 
+$("#comprobantepago").change(function () {
+    var file = this.files[0];
+    var imagefile = file.type;
+    var sizefile = file.size;
+    var match = ["image/jpeg", "image/png", "image/jpg", "application/pdf"];
+
+    var sizemax = 3000000;
+
+    // console.log(sizefile)
+
+    if (!((imagefile == match[0]) || (imagefile == match[1]) || (imagefile == match[2]) || (imagefile == match[3]) || (imagefile == match[4]))) {
+        alert('Por favor seleccione un formato válido: (JPEG/JPG/PNG).');
+        $("#comprobantepago").val('');
+        return false;
+    }
+    if (sizefile > sizemax) {
+        alert('Archivo demasiado grande, favor de reducirlo');
+        $("#comprobantepago").val('');
+        return false;
+    }
+    $("label[for='file']").text(this.files[0].name);
+});
+
 
 btnValidarCodigo.addEventListener('click', function(){
     let codFullPass = document.getElementById('codFullPass').value;
@@ -32,6 +55,9 @@ btnValidarCodigo.addEventListener('click', function(){
                         alertValidarCodigo.add('d-block');
                         document.querySelector('.alertValidarCodigo').textContent = 'Código registrado';
                         document.querySelector('.validCodigo').value = 0
+                        
+                        $('#codFullPass').attr('readonly', true);
+                        $('#btnValidarCodigo').attr('disabled', true);
                     }else{
                         // alert('Código no registrado');
                         
@@ -92,11 +118,6 @@ formCampeonato.addEventListener('submit', function(e){
 
         }
     }
-
-
-
-    
-
     
 })
 

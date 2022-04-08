@@ -14,6 +14,40 @@
 
     // var_dump($_POST);
 
+
+    function estado_p($id_estado, $basededatosimpmx){
+
+        
+
+        $queryestado=$basededatosimpmx->connect()->prepare("SELECT id, estado FROM tbl_estados WHERE id='$id_estado'");
+        $queryestado->execute();
+
+        $resultado=$queryestado->fetch(PDO::FETCH_OBJ);
+
+        return $resultado->estado;
+
+    }
+
+    // echo estado_p($_POST['estado_p'], $basededatosimpmx);
+
+
+    function categoria_p($id_categoria, $basededatosimpmx){
+
+        
+
+        $queryestado=$basededatosimpmx->connect()->prepare("SELECT id, categoria FROM tbl_categorias WHERE id='$id_categoria'");
+        $queryestado->execute();
+
+        $resultado=$queryestado->fetch(PDO::FETCH_OBJ);
+
+        return $resultado->categoria;
+
+    }
+
+    // echo categoria_p($_POST['categoria_p'], $basededatosimpmx);
+
+    
+
     if(isset($_POST['tipoForm'])){
 
 
@@ -21,9 +55,12 @@
 
         $fileName = (isset($_FILES['comprobantepago']['name'])) ? $tokenCompetidor.'_'.$_FILES['comprobantepago']['name'] : '';
         $sourcePath = (isset($_FILES['comprobantepago']['tmp_name'])) ? $_FILES['comprobantepago']['tmp_name'] : '';
-        $targetPath = FOLDER_SOLISTAS.$tokenCompetidor.'_'.$fileName;
+        $targetPath = FOLDER_SOLISTAS.$fileName;
 
         $status_pago = 0;
+
+        $categoria_p = categoria_p($_POST['categoria_p'], $basededatosimpmx);
+        $estado_p = estado_p($_POST['estado_p'], $basededatosimpmx);
 
         if($tipoForm=='solistas'){
 
@@ -97,10 +134,10 @@
                 $body = str_replace('$apellidos_p', $_POST['apellidos_p'], $body);
                 $body = str_replace('$email_p', $_POST['email_p'], $body);
                 $body = str_replace('$fecha_nac', $_POST['fecha_nac'], $body);
-                $body = str_replace('$pais_p', $_POST['estado_p'], $body);
+                $body = str_replace('$pais_p', $estado_p, $body);
                 $body = str_replace('$cod_insc', $tokenCompetidor, $body);
                 $body = str_replace('$fecha_registro', $dateregistro, $body);
-                $body = str_replace('$categoria_insc', $_POST['categoria_p'], $body);
+                $body = str_replace('$categoria_insc', $categoria_p, $body);
                 if($status_pago==0){
                     $body = str_replace('$status_pago', 'Pendiente', $body);
                 }else{

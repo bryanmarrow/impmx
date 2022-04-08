@@ -2553,8 +2553,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked {
-    background-color: #6366f1;
-    border-color: #6366f1
+    background-color: #257e1b;
+    border-color: #339b27;
 }
 
 .form-check-input:checked[type=checkbox] {
@@ -3207,8 +3207,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
     color: #000;
-    background-color: #8285f4;
-    border-color: #7375f2
+    background-color: #22c55e;
+    border-color: #339b27;
 }
 
 .btn-check:checked+.btn-primary:focus,
@@ -3222,8 +3222,8 @@ fieldset:disabled .btn {
 .btn-primary:disabled,
 .btn-primary.disabled {
     color: #000;
-    background-color: #6366f1;
-    border-color: #6366f1
+    background-color: #257e1b;
+    border-color: #339b27;
 }
 
 .btn-secondary {
@@ -13779,9 +13779,9 @@ label {
 
 .was-validated .form-check-input:valid:checked,
 .form-check-input.is-valid:checked {
-    background-color: #6366f1;
-    border-color: #6366f1;
-    box-shadow: none
+    background-color: #257e1b;
+    border-color: #339b27;
+    box-shadow: none;
 }
 
 .was-validated .form-check-input:invalid:checked,

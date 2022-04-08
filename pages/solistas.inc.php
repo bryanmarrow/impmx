@@ -47,11 +47,11 @@
                         <label class="mb-2 form-label">Género</label>
                         <div class="form-group d-block">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="masculino" value="Masculino" name="genero_p">
+                                <input class="form-check-input" type="radio" id="masculino" value="Masculino" name="genero_p" required>
                                 <label class="form-check-label" for="masculino">Masculino</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="femenino" value="Femenino" name="genero_p" >
+                                <input class="form-check-input" type="radio" id="femenino" value="Femenino" name="genero_p"  required>
                                 <label class="form-check-label" for="femenino">Femenino</label>
                             </div>
                         </div>
@@ -97,7 +97,7 @@
                     <div class="col-lg-4 mb-2">
                         <div class="form-group">
                             <label class="form-label">Adjuntar comprobante de pago</label>
-                            <input class="form-control" type="file" name="comprobantepago" placeholder="Comprobante de pago" required>
+                            <input class="form-control" type="file" id="comprobantepago" name="comprobantepago" accept="application/pdf, image/jpg, image/png" placeholder="Comprobante de pago" required>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-04-2022 a las 01:47:18
--- Versión del servidor: 10.4.20-MariaDB
--- Versión de PHP: 7.4.21
+-- Tiempo de generación: 08-04-2022 a las 06:38:08
+-- Versión del servidor: 10.4.18-MariaDB
+-- Versión de PHP: 7.4.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,11 +34,6 @@ CREATE TABLE `tbl_categorias` (
   `status` int(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Truncar tablas antes de insertar `tbl_categorias`
---
-
-TRUNCATE TABLE `tbl_categorias`;
 --
 -- Volcado de datos para la tabla `tbl_categorias`
 --
@@ -115,11 +110,6 @@ CREATE TABLE `tbl_estados` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Truncar tablas antes de insertar `tbl_estados`
---
-
-TRUNCATE TABLE `tbl_estados`;
---
 -- Volcado de datos para la tabla `tbl_estados`
 --
 
@@ -185,11 +175,6 @@ CREATE TABLE `tbl_solistas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Truncar tablas antes de insertar `tbl_solistas`
---
-
-TRUNCATE TABLE `tbl_solistas`;
---
 -- Volcado de datos para la tabla `tbl_solistas`
 --
 
@@ -202,7 +187,16 @@ INSERT INTO `tbl_solistas` (`id`, `categoria_insc`, `nombre_p`, `apellidos_p`, `
 (6, '15', 'Bryan', 'Romero', '2022-04-28', 'bryan.martinez.romero@gmail.com', 'Masculino', '10', 'Puebla', '8183273074', '2022-04-05 14:56:24', 'XNSN5119', '6516516516', 0, NULL, NULL, '', 'solistas'),
 (7, '15', 'Bryan', 'Romero', '2022-04-28', 'bryan.martinez.romero@gmail.com', 'Masculino', '10', 'Puebla', '8183273074', '2022-04-05 14:56:57', 'WHKY7035', '6516516516', 0, NULL, NULL, '', 'solistas'),
 (8, '15', 'Bryan', 'Romero', '2022-04-28', 'bryan.martinez.romero@gmail.com', 'Masculino', '10', 'Puebla', '8183273074', '2022-04-05 14:58:04', '26VG8450', '6516516516', 0, NULL, NULL, '', 'solistas'),
-(9, '12', 'Bryan', 'Romero', '2022-04-14', 'bryan.martinez.romero@gmail.com', 'Masculino', '11', 'Puebla', '8183273074', '2022-04-05 15:02:08', 'DG0J6996', '6516516516', 0, NULL, NULL, 'image_2022_04_04T21_20_50_518Z.png', 'solistas');
+(9, '12', 'Bryan', 'Romero', '2022-04-14', 'bryan.martinez.romero@gmail.com', 'Masculino', '11', 'Puebla', '8183273074', '2022-04-05 15:02:08', 'DG0J6996', '6516516516', 0, NULL, NULL, 'image_2022_04_04T21_20_50_518Z.png', 'solistas'),
+(10, '10', 'Bryan', 'Romero', '2022-04-09', 'bryan.martinez.romero@gmail.com', 'Masculino', '5', 'Puebla', '8183273074', '2022-04-07 22:41:33', 'L3EI6937', 'IWZLW7016', 0, NULL, NULL, 'L3EI6937_original_JAI-UR01002.jpg', 'solistas'),
+(11, '10', 'Bryan', 'Romero', '2022-04-09', 'bryan.martinez.romero@gmail.com', 'Masculino', '5', 'Puebla', '8183273074', '2022-04-07 23:03:55', 'O0KI2402', 'IWZLW7016', 0, NULL, NULL, 'O0KI2402_original_JAI-UR01002.jpg', 'solistas'),
+(12, '10', 'Bryan', 'Romero', '2022-04-09', 'bryan.martinez.romero@gmail.com', 'Masculino', '5', 'Puebla', '8183273074', '2022-04-07 23:06:00', 'UQ4Q6443', 'IWZLW7016', 0, NULL, NULL, 'UQ4Q6443_original_JAI-UR01002.jpg', 'solistas'),
+(13, '19', 'Bryan', 'Romero', '2022-04-09', 'bryan.martinez.romero@gmail.com', 'Masculino', '2', 'Puebla', '8183273074', '2022-04-07 23:06:46', 'MN657989', 'IWZLW7016', 0, NULL, NULL, 'MN657989_original_JAI-UR01002.jpg', 'solistas'),
+(14, '14', 'Bryan', 'Romero', '2022-04-22', 'bryan.martinez.romero@gmail.com', 'Masculino', '6', 'Puebla', '8183273074', '2022-04-07 23:14:50', '0ATM6240', 'IWZLW7016', 0, NULL, NULL, '0ATM6240_6064314283_c97b142c95_b.jpg', 'solistas'),
+(15, '17', 'Bryan', 'Romero', '1992-05-13', 'bryanmzrom@gmail.com', 'Masculino', '21', 'Puebla', '8183273074', '2022-04-07 23:25:36', 'UT8W7375', 'IWZLW7016', 0, NULL, NULL, 'UT8W7375_6064314283_c97b142c95_b.jpg', 'solistas'),
+(16, '17', 'Bryan', 'Romero', '1992-05-13', 'bryanmzrom@gmail.com', 'Masculino', '21', 'Puebla', '8183273074', '2022-04-07 23:26:03', '5TOI5644', 'IWZLW7016', 0, NULL, NULL, '5TOI5644_6064314283_c97b142c95_b.jpg', 'solistas'),
+(17, '6', 'Bryan', 'Romero', '1992-05-13', 'bryanmzrom@gmail.com', 'Masculino', '21', 'Puebla', '8183273074', '2022-04-07 23:27:35', '2OO47890', 'IWZLW7016', 0, NULL, NULL, '2OO47890_6064314283_c97b142c95_b.jpg', 'solistas'),
+(18, '6', 'Bryan', 'Romero', '1992-05-13', 'bryanmzrom@gmail.com', 'Masculino', '21', 'Puebla', '8183273074', '2022-04-07 23:31:10', 'CMOC4817', 'IWZLW7016', 0, NULL, NULL, 'CMOC4817_6064314283_c97b142c95_b.jpg', 'solistas');
 
 --
 -- Índices para tablas volcadas
@@ -246,7 +240,7 @@ ALTER TABLE `tbl_estados`
 -- AUTO_INCREMENT de la tabla `tbl_solistas`
 --
 ALTER TABLE `tbl_solistas`
-  MODIFY `id` int(55) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(55) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
