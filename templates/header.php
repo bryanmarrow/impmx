@@ -144,7 +144,37 @@
         <div class="page-spinner"></div><span>Loading...</span>
       </div>
     </div>
+    
+    <div class="modal fade sucessregistro" id="sucessregistro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Detalles de registro</h4>
+          </div>
+          <div class="modal-body">
+            <div class="card mb-4">
+              <img src="https://admin.eurosonlatino.com.mx/assets/images/mail-cover-impmx.jpg" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                  <span class="font-weight-medium alertaexitoso"> </span>                  
+                </div>
+                
+                <p class=""card-text font-size-sm"">En breve recibirás un correo electrónico con los detalles de tu registro, no olvides verificar tu bandeja de correos no deseados, spam u otros(En correos Outlook).</p>
 
+                <p class=""card-text font-size-sm""><strong>Si no lo recibiste 48hrs después de la compra, verifica tu bandeja de correos no deseados, spam u otros(En correos Outlook).</strong></p>
+
+                <p class=""card-text font-size-sm"">En caso de no haberlo recibido favor de enviar un correo a <a href="mailto:info@imperiomexico.com.mx">info@imperiomexico.com.mx</a></p>
+                <span class="text-muted font-size-xs">Esta página se redireccionará en <span id="testdiv"></span> segundos</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
 
     <!-- Page wrapper for sticky footer -->
     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->

@@ -1,6 +1,7 @@
 const formCampeonato = document.querySelector('.formCampeonato');
 const btnValidarCodigo = document.getElementById('btnValidarCodigo');
 const preloader = document.querySelector('.page-loading');
+var getUrl = window.location;
 
 $("#comprobantepago").change(function () {
     var file = this.files[0];
@@ -110,8 +111,15 @@ formCampeonato.addEventListener('submit', function(e){
                 },
                 success: function (datos) {
                     
-                    preloader.classList.remove('active');
-                    console.log(datos)
+                    if(datos.respuesta=='success'){
+                        preloader.classList.remove('active');
+                        document.querySelector('.alertaexitoso').textContent = 'Registro exitoso';
+                        $('.sucessregistro').modal('show')
+                        $('.sucessregistro').on('show.bs.modal', interval())
+                    }else{
+                        console.log(datos)
+                    }
+                    
 
                 }
             });
@@ -121,3 +129,17 @@ formCampeonato.addEventListener('submit', function(e){
     
 })
 
+var inter, t;
+
+function interval() {
+    t = 15;
+    inter = setInterval(function () {
+        document.getElementById("testdiv").innerHTML = t--;
+    }, 1000, "JavaScript");
+
+    setTimeout(redirect, 15000)
+}
+
+function redirect() {
+    window.location.href = getUrl.origin;
+}
