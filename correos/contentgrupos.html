@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
+
 <head>
     <meta charset="utf-8"> <!-- utf-8 works for most cases -->
     <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
-    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
-    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Tell iOS not to automatically link certain text strings. -->
+    <meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+    <!-- Tell iOS not to automatically link certain text strings. -->
     <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
 
     <!-- Web Font / @font-face : BEGIN -->
@@ -29,7 +32,6 @@
 
     <!-- CSS Reset : BEGIN -->
     <style>
-
         /* What it does: Remove spaces around the email design added by some email clients. */
         /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
         html,
@@ -52,7 +54,8 @@
         }
 
         /* What it does: forces Samsung Android mail clients to use the entire viewport */
-        #MessageViewBody, #MessageWebViewDiv{
+        #MessageViewBody,
+        #MessageWebViewDiv {
             width: 100% !important;
         }
 
@@ -73,7 +76,7 @@
 
         /* What it does: Uses a better rendering method when resizing images in IE. */
         img {
-            -ms-interpolation-mode:bicubic;
+            -ms-interpolation-mode: bicubic;
         }
 
         /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
@@ -82,7 +85,8 @@
         }
 
         /* What it does: A work-around for email clients meddling in triggered links. */
-        a[x-apple-data-detectors],  /* iOS */
+        a[x-apple-data-detectors],
+        /* iOS */
         .unstyle-auto-detected-links a,
         .aBn {
             border-bottom: 0 !important;
@@ -107,7 +111,7 @@
         }
 
         /* If the above doesn't work, add a .g-img class to any image in question. */
-        img.g-img + div {
+        img.g-img+div {
             display: none !important;
         }
 
@@ -116,23 +120,24 @@
 
         /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
         @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
-            u ~ div .email-container {
+            u~div .email-container {
                 min-width: 320px !important;
             }
         }
+
         /* iPhone 6, 6S, 7, 8, and X */
         @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
-            u ~ div .email-container {
+            u~div .email-container {
                 min-width: 375px !important;
             }
         }
+
         /* iPhone 6+, 7+, and 8+ */
         @media only screen and (min-device-width: 414px) {
-            u ~ div .email-container {
+            u~div .email-container {
                 min-width: 414px !important;
             }
         }
-
     </style>
 
     <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
@@ -149,94 +154,103 @@
 
     <!-- Progressive Enhancements : BEGIN -->
     <style>
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
 
-	    /* What it does: Hover styles for buttons */
-	    .button-td,
-	    .button-a {
-	        transition: all 100ms ease-in;
-	    }
-	    .button-td-primary:hover,
-	    .button-a-primary:hover {
-	        background: #555555 !important;
-	        border-color: #555555 !important;
-	    }
+        .button-td-primary:hover,
+        .button-a-primary:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
 
-	    /* Media Queries */
-	    @media screen and (max-width: 600px) {
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
 
-	        /* What it does: Adjust typography on small screens to improve readability */
-	        .email-container p {
-	            font-size: 17px !important;
-	        }
+            /* What it does: Adjust typography on small screens to improve readability */
+            .email-container p {
+                font-size: 17px !important;
+            }
 
-	    }
-
+        }
     </style>
     <!-- Progressive Enhancements : END -->
 
 </head>
+
 <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
-	<center style="width: 100%; background-color: #222222;">
+    <center style="width: 100%; background-color: #222222;">
         <!-- Visually Hidden Preheader Text : BEGIN -->
-        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">&iexcl;Bienvenido - Revisa la informaci&oacute;n de tu registro y guarda este correo electr&oacute;nico.
+        <div
+            style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+            &iexcl;Bienvenido - Revisa la informaci&oacute;n de tu registro y guarda este correo electr&oacute;nico.
         </div>
         <!-- Visually Hidden Preheader Text : END -->
 
         <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
         <!-- Preview Text Spacing Hack : BEGIN -->
-        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
-	        &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        <div
+            style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+            &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
         </div>
         <div style="max-width: 600px; margin: 0 auto;" class="email-container">
-	        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                style="margin: auto;">
                 <tr>
                     <td style="background-color: #ffffff;">
-                        <img src="http://eurosonlatino.com.mx/mail/mail.jpg" width="600" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img">
+                        <img src="https://admin.eurosonlatino.com.mx/assets/images/mail-cover-impmx.jpg" width="600"
+                            height="" alt="alt_text" border="0"
+                            style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;"
+                            class="g-img">
                     </td>
                 </tr>
                 <tr>
-                    <td bgcolor="#ffffff" style="padding: 40px; text-align: center; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
-                        <table role="presentation" align="center" border="1" cellpadding="0" cellspacing="0" width="80%">
+                    <td bgcolor="#ffffff"
+                        style="padding: 40px; text-align: center; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                        <table role="presentation" align="center" border="1" cellpadding="0" cellspacing="0"
+                            width="80%">
                             <tr>
-                            <th colspan="2"><b>Grupo</b></th>
+                                <th colspan="2"><b>Grupo</b></th>
                             </tr>
                             <tr>
-                            <th>Nombre del representante</th>
-                            <td>$nom_repre</td>
+                                <th>Nombre del representante</th>
+                                <td>$nom_repre</td>
                             </tr>
                             <tr>
-                            <th>Email</th>
-                            <td style="font-size: 12px;">$email_repre</td>
+                                <th>Email</th>
+                                <td style="font-size: 12px;">$email_repre</td>
                             </tr>
                             <tr>
-                            <th colspan="2"><b>Informaci&oacute;n general</b></th>
+                                <th colspan="2"><b>Informaci&oacute;n general</b></th>
                             </tr>
                             <tr>
                                 <th>Nombre del grupo</th>
                                 <td>$nom_grupo</td>
-                                </tr>
-                            <tr>
-                            <th>Pa&iacute;s</th>
-                            <td>$pais_grupo</td>
                             </tr>
                             <tr>
-                            <th>Fecha de registro</th>
-                            <td>$fecha_registro</td>
+                                <th>Estado</th>
+                                <td>$pais_grupo</td>
                             </tr>
                             <tr>
-                            <th>No. de inscripci&oacute;n</th>
-                            <td>$cod_insc</td>
+                                <th>Fecha de registro</th>
+                                <td>$fecha_registro</td>
                             </tr>
                             <tr>
-                            <th>Categor&iacute;a</th>
-                            <td>$categoria_insc</td>
+                                <th>No. de inscripci&oacute;n</th>
+                                <td>$cod_insc</td>
+                            </tr>
+                            <tr>
+                                <th>Categor&iacute;a</th>
+                                <td>$categoria_insc</td>
                             </tr>
                             <tr>
                                 <th>Status de Pago</th>
                                 <td>$status_pago</td>
                             </tr>
-                            </table>
-                            
+                        </table>
+
                     </td>
                 </tr>
                 <tr>
@@ -246,27 +260,34 @@
                 </tr>
                 <tr>
                     <td style="background-color: #ffffff;">
-                        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="400">
+                        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0"
+                            width="400">
                             <tr>
-                                <td valign="middle" style="text-align: center;  font-family: sans-serif; font-size: 11px; mso-height-rule: exactly; line-height: 20px; color: #848484;">
-                                    <p style="margin: 0;">Este es un mensaje de e-mail automatizado, por favor, no conteste directamente.
-                                        Si tiene alguna pregunta contacte con nosotros a <a href="mailto:info@eurosonlatino.com.mx">info@eurosonlatino.com.mx</a></p>
+                                <td valign="middle"
+                                    style="text-align: center;  font-family: sans-serif; font-size: 11px; mso-height-rule: exactly; line-height: 20px; color: #848484;">
+                                    <p style="margin: 0;">Este es un mensaje de e-mail automatizado, por favor, no
+                                        conteste directamente.
+                                        Si tiene alguna pregunta contacte con nosotros a <a
+                                            href="mailto:$contact_event">$contact_event</a></p>
                                 </td>
                             </tr>
                         </table>
                     </td>
                 </tr>
             </table>
-	        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                style="margin: auto;">
                 <tr>
-                    <td style="padding: 0px; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #888888;">
+                    <td
+                        style="padding: 0px; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #888888;">
                         <br><br>
-						Euroson Latino<br><span class="unstyle-auto-detected-links">Copyright 2020 &copy; Todos los Derechos Reservados</span>                        <br><br>                        
-                        
+                        $name_event <br><span class="unstyle-auto-detected-links">Copyright $year_event &copy; Todos los
+                            Derechos Reservados</span> <br><br>
                     </td>
                 </tr>
             </table>
         </div>
     </center>
 </body>
+
 </html>

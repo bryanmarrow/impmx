@@ -46,11 +46,11 @@ $basededatos = new Database;
 
 // Base de datos Imperio México 2022
 define('HOSTimpmx', 'localhost');
-define('DBimpmx', 'impmx_2022');
-// define ('USER','eurosonl_btech');
-// define('PASSWORD', 'K%M$dqbV5z8q');
-define ('USERimpmx','root');
-define('PASSWORDimpmx', '');
+define('DBimpmx', 'eurosonl_impmx2022');
+define ('USERimpmx','eurosonl_btech');
+define('PASSWORDimpmx', 'K%M$dqbV5z8q');
+// define ('USERimpmx','root');
+// define('PASSWORDimpmx', '');
 
 class DatabaseImperioMexico{
 
@@ -96,6 +96,8 @@ define('passwordadminimpx', 'Fexiaroga170330**');
 define('emailsuperadmin', 'bryan.martinez.romero@gmail.com');
 
 define('FOLDER_SOLISTAS', '../comprobantes/solistas/' );
+define('FOLDER_PAREJAS', '../comprobantes/parejas/' );
+define('FOLDER_GRUPOS', '../comprobantes/grupos/' );
 define('YEAR_EVENT', 2022);
 define('NAME_EVENT', 'Imperio México');
 define('EMAIL_EVENT_CONTACTO','info@imperiomexico.com.mx');

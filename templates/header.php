@@ -141,7 +141,8 @@
     <!-- Page loading spinner -->
     <div class="page-loading">
       <div class="page-loading-inner">
-        <div class="page-spinner"></div><span>Loading...</span>
+        <div class="page-spinner"></div>
+        <span>Cargando...</span>
       </div>
     </div>
     
@@ -197,7 +198,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Inicio</a>
+                  <a href="<?= $rootPath ?>" class="nav-link">Inicio</a>
                 </li>
                 <li class="nav-item">
                   <a href="#artistasinvitados" class="nav-link">Artistas Invitados</a>
@@ -210,6 +211,14 @@
                 </li>
                 <li class="nav-item">
                   <a href="#concierto" class="nav-link">Concierto</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Registro</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../registro/solistas.php" class="dropdown-item">Solistas</a></li>
+                    <li><a href="../registro/parejas.php" class="dropdown-item">Parejas</a></li>
+                    <li><a href="../registro/grupos.php" class="dropdown-item">Grupos</a></li>
+                  </ul>
                 </li>
               </ul>
             </div>
