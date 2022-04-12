@@ -201,23 +201,29 @@
                   <a href="<?= $rootPath ?>" class="nav-link">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#artistasinvitados" class="nav-link">Artistas Invitados</a>
+                  <a href="<?= $rootPath ?>#artistasinvitados" class="nav-link">Artistas Invitados</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#pases" class="nav-link">Pases</a>
+                  <a href="<?= $rootPath ?>#pases" class="nav-link">Pases</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#sede" class="nav-link">Sede</a>
+                  <a href="<?= $rootPath ?>#sede" class="nav-link">Sede</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#concierto" class="nav-link">Concierto</a>
+                  <a href="<?= $rootPath ?>#concierto" class="nav-link">Concierto</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Registro</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Campeonato</a>
                   <ul class="dropdown-menu">
-                    <li><a href="../registro/solistas.php" class="dropdown-item">Solistas</a></li>
-                    <li><a href="../registro/parejas.php" class="dropdown-item">Parejas</a></li>
-                    <li><a href="../registro/grupos.php" class="dropdown-item">Grupos</a></li>
+                    <li><a href="https://bit.ly/reglamento_impmx2022" target="_blank" class="dropdown-item">Reglamento</a></li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="https://bit.ly/reglamento_impmx2022" class="dropdown-item">Registro</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="<?= $rootPath ?>registro/parejas.php" class="dropdown-item">Parejas</a></li>
+                        <li><a href="<?= $rootPath ?>registro/solistas.php" class="dropdown-item">Solistas</a></li>
+                        <li><a href="<?= $rootPath ?>registro/grupos.php" class="dropdown-item">Grupos</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
               </ul>

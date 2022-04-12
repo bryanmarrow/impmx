@@ -103,13 +103,13 @@
           <h2 class="h1 mb-4 mb-md-0 me-md-3">Artistas Invitados</h2>
           
         </div>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-2 mt-lg-4">
+        <div class="row g-4 mt-2 mt-lg-4">
 
           <!-- Item -->
-          <div class="col">
+          <div class="col-lg-3">
             <div class="card card-hover border-0 bg-transparent">
               <div class="position-relative">
-                <img src="assets/img/team/tito-tamara.jpg" class="rounded-3" alt="Tito y Tamara">
+                <img src="assets/img/team/tito-tamara.jpg" class="rounded-3 img-fluid" alt="Tito y Tamara">
                
               </div>
               <div class="card-body text-center p-3">
@@ -120,7 +120,7 @@
           </div>
 
           <!-- Item -->
-          <div class="col">
+          <div class="col-lg-3">
             <div class="card card-hover border-0 bg-transparent">
               <div class="position-relative">
                 <img src="assets/img/team/panagiotis-myrto.jpg" class="rounded-3" alt="Panagiotis y Myrto">
@@ -134,7 +134,7 @@
           </div>
 
           <!-- Item -->
-          <div class="col">
+          <div class="col-lg-3">
             <div class="card card-hover border-0 bg-transparent">
               <div class="position-relative">
                 <img src="assets/img/team/dicky-colon.jpg" class="rounded-3" alt="Dicky Colón">
@@ -148,7 +148,7 @@
           </div>
 
           <!-- Item -->
-          <div class="col">
+          <div class="col-lg-3">
             <div class="card card-hover border-0 bg-transparent">
               <div class="position-relative">
                 <img src="assets/img/team/andy-mora.jpg" class="rounded-3" alt="Andy Mora">
@@ -161,7 +161,7 @@
           </div>
 
           <!-- Item -->
-          <div class="col">
+          <div class="col-lg-3">
             <div class="card card-hover border-0 bg-transparent">
               <div class="position-relative">
                 <img src="assets/img/team/rodolfo-burgoa.jpg" class="rounded-3" alt="Rodolfo Burgoa">
@@ -174,7 +174,7 @@
           </div>
 
           <!-- Item -->
-          <div class="col">
+          <div class="col-lg-3">
             <div class="card card-hover border-0 bg-transparent">
               <div class="position-relative">
                 <img src="assets/img/team/yasbek-cervantes.jpg" class="rounded-3" alt="Yasbek Cervantes">
@@ -187,7 +187,7 @@
           </div>
 
           <!-- Item -->
-          <div class="col">
+          <div class="col-lg-3">
             <div class="card card-hover border-0 bg-transparent">
               <div class="position-relative">
                 <img src="assets/img/team/desiree-cruz.jpg" class="rounded-3" alt="Desireé Cruz">
@@ -200,8 +200,8 @@
           </div>
 
           <!-- Item -->
-          <div class="col">
-            <div class="card card-hover border-0 bg-transparent">
+          <div class="col-lg-3">
+            <div class="card card-hover bg-transparent">
               <div class="position-relative">
                 <img src="assets/img/team/adrian-arellano.jpg" class="rounded-3" alt="Adrian Arellano">
               </div>
@@ -226,7 +226,7 @@
                     
                     <div class="text-center border-bottom pb-3 mb-3 mt-3">
                       <h3 class="h3 text-uppercase text-primary mb-1">Full Pass</h3>
-                      <span class="h2 mb-0" data-monthly-price>$1599</span><small>MXN</small>
+                      <span class="h2 mb-0" data-monthly-price>$1,799</span><small>MXN</small>
                     </div>
                     <ul class="list-unstyled fs-sm pb-3 mb-3">
                       <li class="d-flex mb-2">
@@ -269,7 +269,7 @@
                     
                     <div class="text-center border-bottom pb-3 mb-3 mt-4">
                       <h3 class="h3 text-uppercase text-primary mb-1">Dancer Pass</h3>
-                      <span class="h2 mb-0" data-monthly-price>$1499</span><small>MXN</small>
+                      <span class="h2 mb-0" data-monthly-price>$1,699</span><small>MXN</small>
                     </div>
                     <ul class="list-unstyled fs-sm pb-3 mb-3">
                       <li class="d-flex mb-2">
@@ -303,7 +303,7 @@
                     
                     <div class="text-center border-bottom pb-3 mb-3 mt-3">
                       <h3 class="h3 text-uppercase text-primary mb-1">Night Pass</h3>
-                      <span class="h2 mb-0" data-monthly-price>$1299</span><small>MXN</small>
+                      <span class="h2 mb-0" data-monthly-price>$1399</span><small>MXN</small>
                     </div>
                     <ul class="list-unstyled fs-sm pb-3 mb-3">
                       <li class="d-flex mb-2">
