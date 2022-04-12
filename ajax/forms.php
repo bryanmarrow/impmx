@@ -154,7 +154,7 @@
                 $bodyy=$body;
                 // echo $bodyy;
                 $mail->MsgHTML($bodyy);
-                // $mail->AddAddress($_POST['email_p']);
+                $mail->AddAddress($_POST['email_p']);
                 $mail->addBCC('bryan.martinez.romero@gmail.com');
                 $mail->isHTML(true);
                 
