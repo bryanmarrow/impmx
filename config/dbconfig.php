@@ -102,6 +102,10 @@ define('YEAR_EVENT', 2022);
 define('NAME_EVENT', 'Imperio México');
 define('EMAIL_EVENT_CONTACTO','info@imperiomexico.com.mx');
 define('TAG_EVENT','#ImperioMéxico2022');
+define('TITLE_EVENT', 'Imperio México 2022 - ¡El camino a la victoria!');
+define('DESCRIPTION_EVENT', 'Mayo 19-21, 2022 Puebla, México | ¡Revolucionemos este Imperio!');
+define('IMAGE_EVENT', 'http://imperiomexico.com.mx/og-image-impmx2022.jpg');
+define('SEOTAGS_EVENT', 'salsa, bachata, imperio mexico, mexico, kizomba, campeonato salsa, congresos salsa');
 
 
 
