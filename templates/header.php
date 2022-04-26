@@ -234,8 +234,17 @@
                         <li><a href="<?= $rootPath ?>registro/grupos.php" class="dropdown-item">Grupos</a></li>
                       </ul>
                     </li>
+                    <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Música</a>
+                      <ul class="dropdown-menu">
+                        <li><a target="_blank" href="https://forms.gle/Ep3B7hceuNtKFxVWA" class="dropdown-item">Solistas</a></li>
+                        <li><a target="_blank" href="https://forms.gle/qyKR9tYANa8jxFaH7" class="dropdown-item">Parejas</a></li>
+                        <li><a target="_blank" href="https://forms.gle/6LSLfYHxoQg2Mo288" class="dropdown-item">Grupos</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
+                
               </ul>
             </div>
             <!-- <div class="offcanvas-footer border-top">
