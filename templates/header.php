@@ -223,19 +223,21 @@
                   <a href="<?= $rootPath ?>#concierto" class="nav-link">Concierto</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Campeonato</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Campeonato</a>
                   <ul class="dropdown-menu">
                     <li><a href="https://bit.ly/reglamento_impmx2022" target="_blank" class="dropdown-item">Reglamento</a></li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="https://bit.ly/reglamento_impmx2022" class="dropdown-item">Registro</a>
+
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Registro</a>
+
                       <ul class="dropdown-menu">
                         <li><a href="<?= $rootPath ?>registro/parejas.php" class="dropdown-item">Parejas</a></li>
                         <li><a href="<?= $rootPath ?>registro/solistas.php" class="dropdown-item">Solistas</a></li>
                         <li><a href="<?= $rootPath ?>registro/grupos.php" class="dropdown-item">Grupos</a></li>
                       </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Música</a>
+                    <li href="#" class="dropdown">
+                      <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Música</a>
                       <ul class="dropdown-menu">
                         <li><a target="_blank" href="https://forms.gle/Ep3B7hceuNtKFxVWA" class="dropdown-item">Solistas</a></li>
                         <li><a target="_blank" href="https://forms.gle/qyKR9tYANa8jxFaH7" class="dropdown-item">Parejas</a></li>
