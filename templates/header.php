@@ -222,6 +222,9 @@
                 <li class="nav-item">
                   <a href="<?= $rootPath ?>#concierto" class="nav-link">Concierto</a>
                 </li>
+                <li class="nav-item">
+                  <a target="_blank" href="https://bit.ly/programaimperiomexico2022" class="nav-link">Programa de Actividades</a>
+                </li>
                 <li class="nav-item dropdown">
                   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Campeonato</a>
                   <ul class="dropdown-menu">
@@ -231,8 +234,8 @@
                       <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Registro</a>
 
                       <ul class="dropdown-menu">
-                        <li><a href="<?= $rootPath ?>registro/parejas.php" class="dropdown-item">Parejas</a></li>
                         <li><a href="<?= $rootPath ?>registro/solistas.php" class="dropdown-item">Solistas</a></li>
+                        <li><a href="<?= $rootPath ?>registro/parejas.php" class="dropdown-item">Parejas</a></li>
                         <li><a href="<?= $rootPath ?>registro/grupos.php" class="dropdown-item">Grupos</a></li>
                       </ul>
                     </li>
@@ -242,6 +245,7 @@
                         <li><a target="_blank" href="https://forms.gle/Ep3B7hceuNtKFxVWA" class="dropdown-item">Solistas</a></li>
                         <li><a target="_blank" href="https://forms.gle/qyKR9tYANa8jxFaH7" class="dropdown-item">Parejas</a></li>
                         <li><a target="_blank" href="https://forms.gle/6LSLfYHxoQg2Mo288" class="dropdown-item">Grupos</a></li>
+                        <li><a target="_blank" href="https://forms.gle/KxBYeuoQZ3414z8L9" class="dropdown-item">Shows</a></li>
                       </ul>
                     </li>
                   </ul>
