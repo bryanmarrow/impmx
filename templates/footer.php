@@ -9,9 +9,9 @@
           <li class="nav-item">
             <a href="#" class="nav-link">Inicio</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#artistasinvitados" class="nav-link">Artistas Invitados</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="#pases" class="nav-link">Pases</a>
           </li>
@@ -23,7 +23,7 @@
           <a href="https://www.facebook.com/imperiomexico" target="_blank" class="btn btn-icon btn-secondary btn-facebook mx-2">
             <i class="bx bxl-facebook"></i>
           </a>
-          <a href="https://www.instagram.com/imperiomexico2022/" target="_blank" class="btn btn-icon btn-secondary btn-instagram mx-2">
+          <a href="https://www.instagram.com/imperiomexico2023/" target="_blank" class="btn btn-icon btn-secondary btn-instagram mx-2">
             <i class="bx bxl-instagram"></i>
           </a>
         </div>

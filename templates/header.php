@@ -210,9 +210,9 @@
                 <li class="nav-item">
                   <a href="<?= $rootPath ?>" class="nav-link">Inicio</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a href="<?= $rootPath ?>#artistasinvitados" class="nav-link">Artistas Invitados</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a href="<?= $rootPath ?>#pases" class="nav-link">Pases</a>
                 </li>
@@ -222,7 +222,7 @@
                 <li class="nav-item">
                   <a href="<?= $rootPath ?>#concierto" class="nav-link">Concierto</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a target="_blank" href="https://bit.ly/programaimperiomexico2022" class="nav-link">Programa de Actividades</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -249,7 +249,7 @@
                       </ul>
                     </li>
                   </ul>
-                </li>
+                </li> -->
                 
               </ul>
             </div>
