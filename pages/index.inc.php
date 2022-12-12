@@ -29,7 +29,7 @@
           <div class="col-xl-7 col-lg-6 pe-lg-5">
             <div class="d-flex h-100 pe-xl-4">
               <video class="w-100" autoplay muted loop style="object-fit: cover;">
-                <source src="assets/img/landing/conference/impmx-2022.mp4" type="video/mp4">
+                <source src="assets/img/promo_imperiomexico2023.mp4" type="video/mp4">
               </video>
             </div>
           </div>
