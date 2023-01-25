@@ -214,10 +214,16 @@
                   <a href="<?= $rootPath ?>#artistasinvitados" class="nav-link">Artistas Invitados</a>
                 </li> -->
                 <li class="nav-item">
-                  <a href="<?= $rootPath ?>#pases" class="nav-link">Pases</a>
+                  <a href="<?= $rootPath ?>#pases" class="nav-link">Costos</a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= $rootPath ?>#inscripciones" class="nav-link">Inscripciones</a>
                 </li>
                 <li class="nav-item">
                   <a href="<?= $rootPath ?>#sede" class="nav-link">Sede</a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= $rootPath ?>#hotel" class="nav-link">Hotel</a>
                 </li>
                 <li class="nav-item">
                   <a href="<?= $rootPath ?>#concierto" class="nav-link">Concierto</a>

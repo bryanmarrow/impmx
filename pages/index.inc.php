@@ -222,14 +222,13 @@
 
 
       <section id="pases" class="container py-5 my-md-2 my-lg-4 my-xl-5">
-        <h2 class="h1 text-center pb-3 pb-md-4">Pases</h2>
+        <h2 class="h1 text-center pb-3 pb-md-4">Costos</h2>
         <div class="price-switch-wrapper mb-n2">
           <div class="table-responsive-xxl pt-md-3">
             <div class="row flex-nowrap pb-4">
               <div class="col">
                 <div class="card bg-transparent shadow-sm p-xxl-3" style="min-width: 18rem;">
                 <div class="card-body">
-                    
                     <div class="text-center border-bottom pb-3 mb-3 mt-3">
                       <h3 class="h3 text-uppercase text-primary mb-1">Full Pass</h3>
                       <span class="h2 mb-0" data-monthly-price>$1,799</span><small>MXN</small>
@@ -340,24 +339,78 @@
             </div>
           </div>
         </div>
+        <p class="lead text-center pb-3 pb-md-4 text-dark">Aparta con $500 pesos y líquida antes del 3 de febrero</p>
+        <div id="inscripciones" class="price-switch-wrapper mb-n2">
+          <div class="table-responsive-xxl pt-md-3">
+            <div class="row flex-nowrap pb-4">
+              <div class="col">
+                <div class="card bg-transparent shadow-sm p-xxl-3" style="min-width: 18rem;">
+                <div class="card-body">
+                    <div class="text-center border-bottom pb-3 mb-3 mt-3">
+                      <h4>Inscripción - Competencia</h4>
+                      <h3 class="h3 text-uppercase text-primary mb-1">Solistas</h3>
+                      <span class="h2 mb-0" data-monthly-price>$500</span><small>MXN</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+
+              
+              <div class="col">
+                <div class="card bg-light position-relative p-xxl-3" style="min-width: 18rem;">
+                  <div class="card-body">
+                    
+                    <div class="text-center border-bottom pb-3 mb-3 mt-4">
+                      <h4>Inscripción - Competencia</h4>
+                      <h3 class="h3 text-uppercase text-primary mb-1">Parejas o Dúos</h3>
+                      <span class="h2 mb-0" data-monthly-price>$900</span><small>MXN</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card bg-light position-relative p-xxl-3" style="min-width: 18rem;">
+                  <span class="badge bg-success d-flex align-items-center fs-sm position-absolute top-0 start-0 rounded-start-0 mt-3 mb-2">
+                    <i class="bx bx-error-circle fs-base opacity-75 me-1"></i>
+                    Costo por integrante
+                  </span>
+                  <div class="card-body">
+                    <div class="text-center border-bottom pb-3 mb-3 mt-4">
+                      <h4>Inscripción - Competencia</h4>
+                      <h3 class="h3 text-uppercase text-primary mb-1">Grupos</h3>
+                      <span class="h2 mb-0" data-monthly-price>$400</span><small>MXN</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
       </section>
 
+      
       <section class="container py-5">
         <div class="row">
           <div class="col-xl-12">
               <!-- Accordion: Default style -->
               <div class="accordion" id="accordionDefault">
                 <div class="accordion-item">
-                  <h3 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Datos Bancarios | Pagos Inscripciones</button>
-                  </h3>
-                  <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionDefault">
+                  <h1 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <span class="h4">Datos Bancarios</span>
+                    </button>
+                  </h1>
+                  <div class="accordion-collapse collapse show" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionDefault">
                     <div class="accordion-body">
                       <dl class="row mx-auto">
                         <dt class="col-sm-3">No. de cuenta:</dt>
-                        <dd class="col-sm-9">8096727</dd>
+                        <dd class="col-sm-9">5125245</dd>
                         <dt class="col-sm-3">CLABE Interbancaria:</dt>
-                        <dd class="col-sm-9">0026 6870 1780 9672 70</dd>
+                        <dd class="col-sm-9">0026 5070 0951 2524 51</dd>
                         <dt class="col-sm-3">No. de tarjeta:</dt>
                         <dd class="col-sm-9">5204 1674 0606 9195</dd>
                         <dt class="col-sm-3 text-truncate">Banco</dt>
@@ -368,28 +421,31 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h3 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Datos Bancarios | Full Pass, Dancer Pass, Night Pass</button>
-                  </h3>
-                  <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionDefault">
-                    <div class="accordion-body">
-                      <dl class="row mx-auto">
-                        <dt class="col-sm-3">No. de cuenta:</dt>
-                        <dd class="col-sm-9">5125245</dd>
-                        <dt class="col-sm-3">CLABE Interbancaria:</dt>
-                        <dd class="col-sm-9">0026 5070 0951 2524 51</dd>
-                        <dt class="col-sm-3">No. de tarjeta:</dt>
-                        <dd class="col-sm-9">5204 1657 8455 5991</dd>
-                        <dt class="col-sm-3 text-truncate">Banco</dt>
-                        <dd class="col-sm-9">Banamex</dd>
-                          </dl>
-                        </dd>
-                      </dl>
-                    </div>
-                  </div>
-                </div>
               </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="container py-5 py-md-6 py-lg-7">
+        <h2 class="h1 text-center pb-3 pb-md-4">Artistas Invitados</h2>
+        <div class="row align-items-center pt-1 pt-md-0">
+          <div class="col-md-6">
+            <img class="d-block mx-auto" width="600" src="assets\img\artistas\poster_dancers.jpeg" alt="Features">
+          </div>
+          <div class="col-md-6">
+            <img class="d-block mx-auto" width="600" src="assets\img\artistas\poster_dancers2.jpeg" alt="Features">
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section id="capacitacion" class="container py-5 py-md-6 py-lg-7">
+        <h2 class="h1 text-center pb-3 pb-md-4">Capacitación Internacional</h2>
+        <div class="row align-items-center pt-1 pt-md-0">
+          <div class="col-md-12">
+            <img class="d-block mx-auto" width="600" src="assets\img\artistas\certificacion_challenge.jpeg" alt="Features">
           </div>
         </div>
       </section>
@@ -421,6 +477,35 @@
         </div>
       </section>
 
+
+      <section id="hotel" class="container py-5 py-md-6 py-lg-7">
+        <div class="row py-3">
+          <div class="col-lg-4 col-md-5 mb-5 mb-md-0">
+            <h2 class="mb-3">Hotel City Express</h2>
+            <h3 class="h6">Puebla - Centro</h3>
+            <ul class="list-unstyled mb-5">
+              <li class="mb-0">C. 10 Nte. 1406, El Alto, 72000 Puebla, Pue.</li>
+              <li class="mb-0">Puebla, México</li>
+            </ul>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4032707174415!2d-98.19119868406847!3d19.045999057861838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86886d53f5cc0e33%3A0x1119496b33d57a51!2sCity%20Express%20Puebla%20Centro!5e0!3m2!1ses!2smx!4v1674675980959!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-xl-6 col-md-7 offset-xl-2 offset-lg-1 px-sm-3">
+            <div class="row mx-n2 mx-sm-n3 cs-gallery">
+              <div class="col-12 px-2 px-md-3">
+                
+                  <a class="cs-gallery-item rounded-lg mb-3 mb-md-0"
+                    href="assets\img\hotel\hotel_cityexpress.jpeg"
+                    data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Conference restaurant&lt;/h6&gt;">
+                    <img src="assets\img\hotel\hotel_cityexpress.jpeg" alt="Gallery thumbnail">
+                  </a>
+                <div class="d-none d-md-block mb-grid-gutter"></div>
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
 
       
     </main>
