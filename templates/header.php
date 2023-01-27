@@ -210,9 +210,12 @@
                 <li class="nav-item">
                   <a href="<?= $rootPath ?>" class="nav-link">Inicio</a>
                 </li>
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                   <a href="<?= $rootPath ?>#artistasinvitados" class="nav-link">Artistas Invitados</a>
-                </li> -->
+                </li>
+                <li class="nav-item">
+                  <a href="<?= $rootPath ?>#conciertos" class="nav-link">Conciertos Internacionales</a>
+                </li>
                 <li class="nav-item">
                   <a href="<?= $rootPath ?>#pases" class="nav-link">Costos</a>
                 </li>
@@ -225,59 +228,12 @@
                 <li class="nav-item">
                   <a href="<?= $rootPath ?>#hotel" class="nav-link">Hotel</a>
                 </li>
-                <li class="nav-item">
-                  <a href="<?= $rootPath ?>#concierto" class="nav-link">Concierto</a>
-                </li>
-                <!-- <li class="nav-item">
-                  <a target="_blank" href="https://bit.ly/programaimperiomexico2022" class="nav-link">Programa de Actividades</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Campeonato</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="https://bit.ly/reglamento_impmx2022" target="_blank" class="dropdown-item">Reglamento</a></li>
-
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Registro</a>
-
-                      <ul class="dropdown-menu">
-                        <li><a href="<?= $rootPath ?>registro/solistas.php" class="dropdown-item">Solistas</a></li>
-                        <li><a href="<?= $rootPath ?>registro/parejas.php" class="dropdown-item">Parejas</a></li>
-                        <li><a href="<?= $rootPath ?>registro/grupos.php" class="dropdown-item">Grupos</a></li>
-                      </ul>
-                    </li>
-                    <li href="#" class="dropdown">
-                      <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Música</a>
-                      <ul class="dropdown-menu">
-                        <li><a target="_blank" href="https://forms.gle/Ep3B7hceuNtKFxVWA" class="dropdown-item">Solistas</a></li>
-                        <li><a target="_blank" href="https://forms.gle/qyKR9tYANa8jxFaH7" class="dropdown-item">Parejas</a></li>
-                        <li><a target="_blank" href="https://forms.gle/6LSLfYHxoQg2Mo288" class="dropdown-item">Grupos</a></li>
-                        <li><a target="_blank" href="https://forms.gle/KxBYeuoQZ3414z8L9" class="dropdown-item">Shows</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li> -->
-                
               </ul>
             </div>
-            <!-- <div class="offcanvas-footer border-top">
-              <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
-                <i class="bx bx-cart fs-4 lh-1 me-1"></i>
-                &nbsp;Buy now
-              </a>
-            </div>       -->
-          </div>
-          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
-            <!-- <input type="checkbox" class="form-check-input" id="theme-mode"> -->
-            <!-- <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label> -->
-            <!-- <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label> -->
           </div>
           <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
-            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
-            &nbsp;Buy now
-          </a> -->
         </div>
       </header>
 

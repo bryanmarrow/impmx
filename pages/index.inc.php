@@ -24,7 +24,7 @@
 </div>
 
 
-<section class="container-fluid position-relative px-0 pt-5 mt-5 mt-lg-5">
+      <section class="container-fluid position-relative px-0 pt-5 mt-5 mt-lg-5">
         <div class="row g-0">
           <div class="col-xl-7 col-lg-6 pe-lg-5">
             <div class="d-flex h-100 pe-xl-4">
@@ -58,7 +58,7 @@
 
 
       <!-- Hero -->
-      <section class="pt-lg-4 mt-lg-3" id="concierto">
+      <section id="conciertos" class="pt-lg-4 mt-lg-3" id="concierto">
         <div class="position-relative overflow-hidden">
   
           <!-- Image -->
@@ -103,123 +103,8 @@
         </div>
       </section>
      
-      <!-- Speakers -->
-      <section id="artistasinvitados" class="container py-5 my-2 my-md-4 my-lg-5 d-none">
-        <div class="d-md-flex align-items-center justify-content-between text-center text-md-start pt-md-1 pt-lg-3">
-          <h2 class="h1 mb-4 mb-md-0 me-md-3">Artistas Invitados</h2>
-          
-        </div>
-        <div class="row g-4 mt-2 mt-lg-4">
-
-          <!-- Item -->
-          <div class="col-lg-3">
-            <div class="card card-hover border-0 bg-transparent">
-              <div class="position-relative">
-                <img src="assets/img/team/tito-tamara.jpg" class="rounded-3 img-fluid" alt="Tito y Tamara">
-               
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="fs-lg fw-semibold pt-1 mb-2">Tito y Tamara</h3>
-                <p class="fs-sm mb-0">Puerto Rico</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item -->
-          <div class="col-lg-3">
-            <div class="card card-hover border-0 bg-transparent">
-              <div class="position-relative">
-                <img src="assets/img/team/panagiotis-myrto.jpg" class="rounded-3" alt="Panagiotis y Myrto">
-               
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="fs-lg fw-semibold pt-1 mb-2">Panagiotis y Myrto</h3>
-                <p class="fs-sm mb-0">Grecia</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item -->
-          <div class="col-lg-3">
-            <div class="card card-hover border-0 bg-transparent">
-              <div class="position-relative">
-                <img src="assets/img/team/dicky-colon.jpg" class="rounded-3" alt="Dicky Colón">
-               
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="fs-lg fw-semibold pt-1 mb-2">Dicky Colón</h3>
-                <p class="fs-sm mb-0">Puerto Rico</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item -->
-          <div class="col-lg-3">
-            <div class="card card-hover border-0 bg-transparent">
-              <div class="position-relative">
-                <img src="assets/img/team/andy-mora.jpg" class="rounded-3" alt="Andy Mora">
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="fs-lg fw-semibold pt-1 mb-2">Andy Mora</h3>
-                <p class="fs-sm mb-0">Costa Rica</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item -->
-          <div class="col-lg-3">
-            <div class="card card-hover border-0 bg-transparent">
-              <div class="position-relative">
-                <img src="assets/img/team/rodolfo-burgoa.jpg" class="rounded-3" alt="Rodolfo Burgoa">
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="fs-lg fw-semibold pt-1 mb-2">Rodolfo Burgoa</h3>
-                <p class="fs-sm mb-0">México</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item -->
-          <div class="col-lg-3">
-            <div class="card card-hover border-0 bg-transparent">
-              <div class="position-relative">
-                <img src="assets/img/team/yasbek-cervantes.jpg" class="rounded-3" alt="Yasbek Cervantes">
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="fs-lg fw-semibold pt-1 mb-2">Yasbek Cervantes</h3>
-                <p class="fs-sm mb-0">México</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item -->
-          <div class="col-lg-3">
-            <div class="card card-hover border-0 bg-transparent">
-              <div class="position-relative">
-                <img src="assets/img/team/desiree-cruz.jpg" class="rounded-3" alt="Desireé Cruz">
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="fs-lg fw-semibold pt-1 mb-2">Desireé Cruz</h3>
-                <p class="fs-sm mb-0">México</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item -->
-          <div class="col-lg-3">
-            <div class="card card-hover bg-transparent">
-              <div class="position-relative">
-                <img src="assets/img/team/adrian-arellano.jpg" class="rounded-3" alt="Adrian Arellano">
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="fs-lg fw-semibold pt-1 mb-2">Adrian Arellano</h3>
-                <p class="fs-sm mb-0">México</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+     
+     
 
       <section id="pases" class="container py-5 my-md-2 my-lg-4 my-xl-5">
         <h2 class="h1 text-center pb-3 pb-md-4">Costos</h2>
@@ -427,7 +312,7 @@
       </section>
       
 
-      <section class="container py-5 py-md-6 py-lg-7">
+      <section id="artistasinvitados" class="container py-5 py-md-6 py-lg-7">
         <h2 class="h1 text-center pb-3 pb-md-4">Artistas Invitados</h2>
         <div class="row align-items-center pt-1 pt-md-0">
           <div class="col-md-6">
