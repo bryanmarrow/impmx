@@ -214,6 +214,9 @@
                   <a href="<?= $rootPath ?>#artistasinvitados" class="nav-link">Artistas Invitados</a>
                 </li>
                 <li class="nav-item">
+                  <a href="https://drive.google.com/file/d/1CKO5o1zFFcI6biAot4R6YtlMp_HVgcqp/view?usp=sharing" target="_blank" class="nav-link">Reglamento</a>
+                </li>
+                <li class="nav-item">
                   <a href="<?= $rootPath ?>#conciertos" class="nav-link">Conciertos Internacionales</a>
                 </li>
                 <li class="nav-item">
