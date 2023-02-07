@@ -164,7 +164,7 @@
           </div>
           <div class="modal-body">
             <div class="card mb-4">
-              <img src="https://admin.eurosonlatino.com.mx/assets/images/mail-cover-impmx.jpg" class="card-img-top" alt="Card image">
+              <img src="https://imperiomexico.com.mx/assets/img/og_image_imperiomexico2023.png" class="card-img-top" alt="Card image">
               <div class="card-body">
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                   <span class="font-weight-medium alertaexitoso"> </span>                  
@@ -210,11 +210,34 @@
                 <li class="nav-item">
                   <a href="<?= $rootPath ?>" class="nav-link">Inicio</a>
                 </li>
-                <li class="nav-item">
-                  <a href="<?= $rootPath ?>#artistasinvitados" class="nav-link">Artistas Invitados</a>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hotel</a>
+                  <div class="dropdown-menu">
+                    <div class="d-lg-flex pt-lg-3">
+                      <div class="mega-dropdown-column">
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="<?= $rootPath ?>#hotel" class="dropdown-item py-1">Ubicación</a></li>
+                          <li><a href="<?= $rootPath ?>reservacion" class="dropdown-item py-1">Reservacion</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Campeonato</a>
+                  <div class="dropdown-menu">
+                    <div class="d-lg-flex pt-lg-3">
+                      <div class="mega-dropdown-column">
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="https://drive.google.com/file/d/1CKO5o1zFFcI6biAot4R6YtlMp_HVgcqp/view?usp=sharing" target="_blank" class="dropdown-item py-1">Reglamento</a></li>
+                          <li><a href="<?= $rootPath ?>#inscripciones" class="dropdown-item py-1">Inscripciones</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li class="nav-item">
-                  <a href="https://drive.google.com/file/d/1CKO5o1zFFcI6biAot4R6YtlMp_HVgcqp/view?usp=sharing" target="_blank" class="nav-link">Reglamento</a>
+                  <a href="<?= $rootPath ?>#artistasinvitados" class="nav-link">Artistas Invitados</a>
                 </li>
                 <li class="nav-item">
                   <a href="<?= $rootPath ?>#conciertos" class="nav-link">Conciertos Internacionales</a>
@@ -223,14 +246,9 @@
                   <a href="<?= $rootPath ?>#pases" class="nav-link">Costos</a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?= $rootPath ?>#inscripciones" class="nav-link">Inscripciones</a>
-                </li>
-                <li class="nav-item">
                   <a href="<?= $rootPath ?>#sede" class="nav-link">Sede</a>
                 </li>
-                <li class="nav-item">
-                  <a href="<?= $rootPath ?>#hotel" class="nav-link">Hotel</a>
-                </li>
+                
               </ul>
             </div>
           </div>

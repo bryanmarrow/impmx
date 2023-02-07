@@ -53,6 +53,7 @@
 
         $tipoForm = (isset($_POST['tipoForm'])) ? $_POST['tipoForm'] : '';
 
+        
         $fileName = (isset($_FILES['comprobantepago']['name'])) ? $tokenCompetidor.'_'.$_FILES['comprobantepago']['name'] : '';
         $sourcePath = (isset($_FILES['comprobantepago']['tmp_name'])) ? $_FILES['comprobantepago']['tmp_name'] : '';
         
@@ -478,6 +479,137 @@
                 );
             }
 
+            header('Content-Type: application/json');
+            echo json_encode($respuesta);
+        }if($tipoForm=='reservacion'){
+
+
+
+            $formato = $_FILES['comprobantepago']['type'];
+            if($formato=='image/png'){
+                $type = '.png';
+            }if($formato=='image/jpeg'){
+                $type = '.jpg';
+            }
+
+            $fileName = (isset($_FILES['comprobantepago']['name'])) ? $tokenCompetidor.$type : '';
+            $sourcePath = (isset($_FILES['comprobantepago']['tmp_name'])) ? $_FILES['comprobantepago']['tmp_name'] : '';
+
+            
+            $targetPath = FOLDER_RESERVACION.$fileName;
+            $estado_p = estado_p($_POST['estado_p'], $basededatosimpmx);
+
+            $data = [
+                'nombre_p' => $_POST['nombre_p'],
+                'fecha_entrada' => $_POST['fecha_entrada'],
+                'fecha_salida' => $_POST['fecha_salida'],
+                'email_p' => $_POST['email_p'],            
+                'tipo_habitacion' => $_POST['tipo_habitacion'],
+                'estado_p' => $_POST['estado_p'],
+                'ciudad_p' => $_POST['ciudad_p'],
+                'num_telefono' => $_POST['num_telefono'],
+                'tokenreservacion' => $tokenCompetidor,
+                'dateregistro' => $dateregistro,
+                'nomcomprobante' => $fileName
+            ];
+    
+            
+            
+
+            try{
+               
+                $basededatosimpmx->connect()->prepare("INSERT INTO 
+                `tbl_reservaciones`( 
+                    `nombre_p`, 
+                    `fecha_entrada`, 
+                    `fecha_salida`,
+                    `email_p`, 
+                    `tipo_habitacion`,
+                    `estado_p`, 
+                    `ciudad_p`, 
+                    `num_telefono`, 
+                    `tokenreservacion`, 
+                    `dateregistro`, 
+                    `nomcomprobante`) 
+                VALUES ( 
+                    :nombre_p, 
+                    :fecha_entrada, 
+                    :fecha_salida, 
+                    :email_p,
+                    :tipo_habitacion,
+                    :estado_p, 
+                    :ciudad_p, 
+                    :num_telefono, 
+                    :tokenreservacion,
+                    :dateregistro, 
+                    :nomcomprobante)")->execute($data);
+
+                
+                move_uploaded_file($sourcePath, $targetPath);
+
+                $mail = new PHPMailer();
+                $mail->CharSet='UTF-8';
+                $mail->Encoding = 'base64';
+                $mail->isSMTP();            
+                // $mail->SMTPDebug  = 2;                            
+                $mail->Host       = 'smtp.gmail.com';          
+                $mail->SMTPAuth   = true;                               
+                $mail->Username   = emailadminimpx;     
+                $mail->Password   = passwordadminimpx;                     
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;      
+                $mail->Port       = 587;                                    
+                $mail->setFrom(emailadminimpx, NAME_EVENT);
+                $body = file_get_contents('../correos/contentreservacion.html');
+
+                $body = str_replace('$nombrecompleto', $_POST['nombre_p'], $body);            
+                $body = str_replace('$tokenconfirmacion', $tokenCompetidor, $body);
+                
+                $body = str_replace('$fecha_entrada', fechaEs($_POST['fecha_entrada']), $body);
+                $body = str_replace('$fecha_salida', fechaEs($_POST['fecha_salida']), $body);
+                $body = str_replace('$estado_p', $estado_p, $body);
+                $body = str_replace('$ciudad_p', $_POST['ciudad_p'], $body);
+
+                $body = str_replace('$dateregistro', $dateregistro, $body);
+                
+                $body = str_replace('$image_event', IMAGE_EVENT, $body);
+                $body = str_replace('$year_event', YEAR_EVENT, $body);
+                $body = str_replace('$name_event', NAME_EVENT, $body);
+                $body = str_replace('$contact_event', EMAIL_EVENT_CONTACTO, $body);
+
+                $body = preg_replace('/\\\\/','', $body);
+                $bodyy=$body;
+                $mail->MsgHTML($bodyy);
+                $mail->AddAddress($_POST['email_p']);
+                $mail->addBCC('bryan.martinez.romero@gmail.com');
+                $mail->isHTML(true);
+                
+                $mail->Subject = 'Confirmación de reservación - HOTEL | '.TAG_EVENT;
+                $mail->send();
+
+                
+
+                $respuesta = array(
+                    'respuesta' => 'success'
+                );
+
+                // move_uploaded_file($sourcePath, $targetPath);
+
+                
+        
+            }catch (phpmailerException $e) {
+                $respuesta = array(
+                    'respuesta' => 'error',
+                    'mensaje' => $e->errorMessage()
+                );
+            }catch( PDOException $e){
+                $respuesta = array(
+                    'respuesta' => 'error',
+                    'mensaje' => $e
+                );
+
+            
+            }
+        
             header('Content-Type: application/json');
             echo json_encode($respuesta);
         }

@@ -338,4 +338,83 @@
         <!-- </div> -->
 
 
+<?php } if($form=='reservacion'){ ?>
+    <div class="col-lg-4">
+        <div class="form-group mb-2">
+            <label for="fl-text" class="form-label">Nombre del titular de la habitación</label>
+            <input class="form-control" type="text" name="nombre_p" placeholder="Nombre" required>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="form-group mb-2">
+            <label for="fl-text" class="form-label">Email</label>
+            <input class="form-control" type="email" name="email_p" placeholder="Email" required>
+        </div>
+    </div>
+    <div class="col-lg-4 mb-2">
+        <div class="form-group">
+            <label for="select-input" class="form-label">Tipo de habitación</label>
+            <select class="form-select" name="tipo_habitacion" required>
+                <option value="">Seleccione una categoría</option>
+                <option value="Sencilla">Sencilla</option>    
+                <option value="Doble">Doble</option>    
+                <option value="Cuádruple">Cuádruple</option>    
+            </select>
+        </div>
+    </div>
+    <div class="col-lg-4 mb-2">
+        <div class="form-group">
+            <label class="form-label">Fecha de entrada:</label> <span class="text-muted">*</span>
+            <input class="form-control" type="date" name="fecha_entrada" required="">
+        </div>
+    </div>
+    <div class="col-lg-4 mb-2">
+        <div class="form-group">
+            <label class="form-label">Fecha de salida:</label> <span class="text-muted">*</span>
+            <input class="form-control" type="date" name="fecha_salida" required="">
+        </div>
+    </div>
+    <div class="col-lg-4 mb-2">
+        <div class="form-group">
+            <label for="select-input" class="form-label">Estado</label>
+            <select class="form-select" name="estado_p" required>
+                <option value="">Seleccione su estado</option>
+                <?php 
+                    $estados=$basededatosimpmx->connect()->prepare("SELECT * FROM tbl_estados order by estado ASC");
+                    $estados->execute();
+                    $Allestados=$estados->fetchAll();
+                    foreach($Allestados as $estado){
+                ?>
+                    <option value="<?= $estado['id'] ?>" ><?= $estado['estado'] ?></option>
+                <?php } ?>
+            </select>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="form-group mb-2">
+            <label for="fl-text" class="form-label">Ciudad</label>
+            <input class="form-control" type="text" name="ciudad_p" placeholder="Ciudad" required>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 mb-2">
+        <div class="form-group ">
+            <label for="fl-text" class="form-label">No. telefónico</label>
+            <div class="input-group">
+                <span class="input-group-text">
+                <i class='bx bxs-phone-call bx-xs'></i>
+                </span>
+                <input type="tel" class="form-control" name="num_telefono" placeholder="No. telefónico" required>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 mb-4">
+        <div class="form-group">
+            <label class="form-label">Adjuntar comprobante de pago de reserva*</label>
+            <input class="form-control" type="file" id="comprobantepago" name="comprobantepago" accept="application/pdf, image/jpg, image/png" placeholder="Comprobante de pago" required>
+        </div>
+    </div>
+    <input type="hidden" value="<?= $form ?>" name="tipoForm">
+    <input type="hidden" value="1" class="validCodigo" name="validCodigo">
+
 <?php } ?>

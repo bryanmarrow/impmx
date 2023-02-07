@@ -47,21 +47,21 @@ $("#comprobantepago").change(function () {
 
 //                     if(datos.numToken>0){
 //                         // alert('Código correcto');                        
-                        
-                        
-                        
+
+
+
 //                         alertValidarCodigo.contains('valid-tooltip')? alertValidarCodigo.add('valid-tooltip'): alertValidarCodigo.remove('invalid-tooltip');
 //                         alertValidarCodigo.contains('invalid-tooltip')? alertValidarCodigo.add('invalid-tooltip'): alertValidarCodigo.remove('valid-tooltip');
 //                         alertValidarCodigo.add('valid-tooltip');
 //                         alertValidarCodigo.add('d-block');
 //                         document.querySelector('.alertValidarCodigo').textContent = 'Código registrado';
 //                         document.querySelector('.validCodigo').value = 0
-                        
+
 //                         $('#codFullPass').attr('readonly', true);
 //                         $('#btnValidarCodigo').attr('disabled', true);
 //                     }else{
 //                         // alert('Código no registrado');
-                        
+
 //                         // alertValidarCodigo.toggle('invalid-tooltip');
 //                         alertValidarCodigo.contains('valid-tooltip')? alertValidarCodigo.add('valid-tooltip'): alertValidarCodigo.remove('invalid-tooltip');
 //                         alertValidarCodigo.contains('invalid-tooltip')? alertValidarCodigo.add('invalid-tooltip'): alertValidarCodigo.remove('valid-tooltip');
@@ -79,11 +79,11 @@ $("#comprobantepago").change(function () {
 
 
 
-formCampeonato.addEventListener('submit', function(e){
+formCampeonato.addEventListener('submit', function (e) {
     e.preventDefault();
     const DataFormCampeonato = new FormData(formCampeonato);
-    
-    
+
+
     for (let [name, value] of DataFormCampeonato) {
         console.log(`${name} = ${value}`);
     }
@@ -92,43 +92,42 @@ formCampeonato.addEventListener('submit', function(e){
     // if(validarCodigo>0){
     //     alert('Necesitar validar código');
     // }else{
-        // console.log('Todo bien');
+    // console.log('Todo bien');
 
-        if (formCampeonato.checkValidity() === false) {
-            formCampeonato.classList.add('was-validated');
-            
-        } else {
+    if (formCampeonato.checkValidity() === false) {
+        formCampeonato.classList.add('was-validated');
 
-            $.ajax({
-                type: 'POST',
-                url: '../ajax/forms.php',
-                data: DataFormCampeonato,
-                processData: false,
-                contentType: false,
-                beforeSend: function () {
-                    // preloader.classList.add('active');
-                    preloader.classList.add('active');
-                },
-                success: function (datos) {
-                    
-                    if(datos.respuesta=='success'){
-                        preloader.classList.remove('active');
-                        document.querySelector('.alertaexitoso').textContent = 'Registro exitoso';
-                        $('.sucessregistro').modal('show')
-                        $('.sucessregistro').on('show.bs.modal', interval())
-                    }else{
-                        console.log(datos)
-                    }
+    } else {
 
-                    // console.log(datos)
-                    
+        $.ajax({
+            type: 'POST',
+            url: './ajax/forms.php',
+            data: DataFormCampeonato,
+            processData: false,
+            contentType: false,
+            beforeSend: function () {
+                preloader.classList.add('active');
+            },
+            success: function (datos) {
 
+                if (datos.respuesta == 'success') {
+                    preloader.classList.remove('active');
+                    document.querySelector('.alertaexitoso').textContent = 'Registro exitoso';
+                    $('.sucessregistro').modal('show')
+                    $('.sucessregistro').on('show.bs.modal', interval())
+                } else {
+                    alert('Intente más tarde, por favor');
                 }
-            });
 
-        }
+                // console.log(datos)
+
+
+            }
+        });
+
+    }
     // }
-    
+
 })
 
 var inter, t;
@@ -143,12 +142,13 @@ function interval() {
 }
 
 function redirect() {
-    window.location.href = getUrl.origin;
+    // window.location.href = getUrl.origin;
+    location.reload();
 }
 
 function integrantesgrupos(data) {
     numint = document.querySelector('#numintegrantes').value
-    
+
     //     item_amt = parseFloat(item) * parseFloat(numint),
     //     tax_amt = parseFloat(tax) * parseFloat(item_amt),
     //     total_amt = parseFloat(item_amt) + tax_amt;
