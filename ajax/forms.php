@@ -484,12 +484,21 @@
         }if($tipoForm=='reservacion'){
 
 
+            // var_dump($_POST);
+
+            if($_POST['nom_hotel']=='0'){
+                $nom_hotel=$_POST['nom_otrohotel'];
+            }else{
+                $nom_hotel=$_POST['nom_hotel'];
+            }            
 
             $formato = $_FILES['comprobantepago']['type'];
             if($formato=='image/png'){
                 $type = '.png';
             }if($formato=='image/jpeg'){
                 $type = '.jpg';
+            }if($formato=='application/pdf'){
+                $type = '.pdf';
             }
 
             $fileName = (isset($_FILES['comprobantepago']['name'])) ? $tokenCompetidor.$type : '';
@@ -510,7 +519,8 @@
                 'num_telefono' => $_POST['num_telefono'],
                 'tokenreservacion' => $tokenCompetidor,
                 'dateregistro' => $dateregistro,
-                'nomcomprobante' => $fileName
+                'nomcomprobante' => $fileName,
+                'nom_hotel' => $nom_hotel
             ];
     
             
@@ -530,7 +540,9 @@
                     `num_telefono`, 
                     `tokenreservacion`, 
                     `dateregistro`, 
-                    `nomcomprobante`) 
+                    `nomcomprobante`,
+                    `nom_hotel`
+                    ) 
                 VALUES ( 
                     :nombre_p, 
                     :fecha_entrada, 
@@ -542,7 +554,9 @@
                     :num_telefono, 
                     :tokenreservacion,
                     :dateregistro, 
-                    :nomcomprobante)")->execute($data);
+                    :nomcomprobante,
+                    :nom_hotel
+                    )")->execute($data);
 
                 
                 move_uploaded_file($sourcePath, $targetPath);
@@ -568,6 +582,7 @@
                 $body = str_replace('$fecha_salida', fechaEs($_POST['fecha_salida']), $body);
                 $body = str_replace('$estado_p', $estado_p, $body);
                 $body = str_replace('$ciudad_p', $_POST['ciudad_p'], $body);
+                $body = str_replace('$nom_hotel', $nom_hotel, $body);
 
                 $body = str_replace('$dateregistro', $dateregistro, $body);
                 

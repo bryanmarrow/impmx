@@ -354,12 +354,32 @@
     <div class="col-lg-4 mb-2">
         <div class="form-group">
             <label for="select-input" class="form-label">Tipo de habitación</label>
-            <select class="form-select" name="tipo_habitacion" required>
+            <select class="form-select" name="tipo_habitacion"  required>
                 <option value="">Seleccione una categoría</option>
                 <option value="Sencilla">Sencilla</option>    
                 <option value="Doble">Doble</option>    
+                <option value="Triple">Triple</option>
                 <option value="Cuádruple">Cuádruple</option>    
             </select>
+        </div>
+    </div>
+    <div class="col-lg-4 mb-2">
+        <div class="form-group">
+            <label for="select-input" class="form-label">Hotel</label>
+            <select class="form-select" id="select_hotel" name="nom_hotel" required>
+                <option value="">Seleccione una categoría</option>
+                <option value="Hotel City Express">Hotel City Express</option>    
+                <option value="Hotel Loa Inn">Hotel Loa Inn</option>    
+                <option value="Hotel 5 de Mayo">Hotel 5 de Mayo</option>    
+                <option value="Hotel 5 de Mayo">Hotel Nube</option>
+                <option value="0">Otro</option>
+            </select>
+        </div>
+    </div>
+    <div id="nom_hotel" class="col-lg-4 d-none">
+        <div class="form-group mb-2">
+            <label for="fl-text" class="form-label">Nombre de Hotel</label>
+            <input class="form-control" type="text" id="nom_hotel_add" name="nom_otrohotel" placeholder="Nombre de Hotel">
         </div>
     </div>
     <div class="col-lg-4 mb-2">

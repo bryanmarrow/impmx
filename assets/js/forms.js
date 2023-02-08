@@ -27,6 +27,22 @@ $("#comprobantepago").change(function () {
 });
 
 
+$("#select_hotel").change(function () {
+    let hotel_sel = $("#select_hotel option:selected").val();
+
+    if (hotel_sel == 0) {
+        $('#nom_hotel').removeClass("d-none");
+        $('#nom_hotel_add').prop('required', true);
+    } else {
+        $('#nom_hotel').addClass("d-none");
+        $('#nom_hotel_add').prop('required', false);
+    }
+
+    console.log(hotel_sel)
+
+
+})
+
 // btnValidarCodigo.addEventListener('click', function(){
 //     let codFullPass = document.getElementById('codFullPass').value;
 
@@ -106,20 +122,20 @@ formCampeonato.addEventListener('submit', function (e) {
             processData: false,
             contentType: false,
             beforeSend: function () {
-                preloader.classList.add('active');
+                // preloader.classList.add('active');
             },
             success: function (datos) {
 
-                if (datos.respuesta == 'success') {
-                    preloader.classList.remove('active');
-                    document.querySelector('.alertaexitoso').textContent = 'Registro exitoso';
-                    $('.sucessregistro').modal('show')
-                    $('.sucessregistro').on('show.bs.modal', interval())
-                } else {
-                    alert('Intente más tarde, por favor');
-                }
+                // if (datos.respuesta == 'success') {
+                //     preloader.classList.remove('active');
+                //     document.querySelector('.alertaexitoso').textContent = 'Registro exitoso';
+                //     $('.sucessregistro').modal('show')
+                //     $('.sucessregistro').on('show.bs.modal', interval())
+                // } else {
+                //     alert('Intente más tarde, por favor');
+                // }
 
-                // console.log(datos)
+
 
 
             }
