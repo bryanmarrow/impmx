@@ -231,6 +231,9 @@
                         <ul class="list-unstyled mb-3">
                           <li><a href="https://drive.google.com/file/d/1CKO5o1zFFcI6biAot4R6YtlMp_HVgcqp/view?usp=sharing" target="_blank" class="dropdown-item py-1">Reglamento</a></li>
                           <li><a href="<?= $rootPath ?>#inscripciones" class="dropdown-item py-1">Inscripciones</a></li>
+                          <li><a href="<?= $rootPath ?>registro/solistas" class="dropdown-item py-1">Solistas</a></li>
+                          <li><a href="<?= $rootPath ?>registro/parejas" class="dropdown-item py-1">Parejas</a></li>
+                          <li><a href="<?= $rootPath ?>registro/grupos" class="dropdown-item py-1">Grupos</a></li>
                         </ul>
                       </div>
                     </div>
@@ -258,6 +261,7 @@
         </div>
       </header>
 
+    
 
       
 

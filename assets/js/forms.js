@@ -3,6 +3,7 @@ const formCampeonato = document.querySelector('.formCampeonato');
 const preloader = document.querySelector('.page-loading');
 var getUrl = window.location;
 
+
 $("#comprobantepago").change(function () {
     var file = this.files[0];
     var imagefile = file.type;
@@ -117,23 +118,23 @@ formCampeonato.addEventListener('submit', function (e) {
 
         $.ajax({
             type: 'POST',
-            url: './ajax/forms.php',
+            url: '../ajax/forms.php',
             data: DataFormCampeonato,
             processData: false,
             contentType: false,
             beforeSend: function () {
-                // preloader.classList.add('active');
+                preloader.classList.add('active');
             },
             success: function (datos) {
 
-                // if (datos.respuesta == 'success') {
-                //     preloader.classList.remove('active');
-                //     document.querySelector('.alertaexitoso').textContent = 'Registro exitoso';
-                //     $('.sucessregistro').modal('show')
-                //     $('.sucessregistro').on('show.bs.modal', interval())
-                // } else {
-                //     alert('Intente más tarde, por favor');
-                // }
+                if (datos.respuesta == 'success') {
+                    preloader.classList.remove('active');
+                    document.querySelector('.alertaexitoso').textContent = 'Registro exitoso';
+                    $('.sucessregistro').modal('show')
+                    $('.sucessregistro').on('show.bs.modal', interval())
+                } else {
+                    alert('Intente más tarde, por favor');
+                }
 
 
 

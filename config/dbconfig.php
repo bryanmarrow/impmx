@@ -46,7 +46,7 @@ $basededatos = new Database;
 
 // Base de datos Imperio México 2022
 define('HOSTimpmx', 'localhost');
-define('DBimpmx', 'eurosonl_impmx2022');
+define('DBimpmx', 'eurosonl_impmx2023');
 define ('USERimpmx','eurosonl_btech');
 define('PASSWORDimpmx', 'K%M$dqbV5z8q');
 // define ('USERimpmx','root');
