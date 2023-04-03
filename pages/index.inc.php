@@ -116,7 +116,7 @@
                 <div class="card-body">
                     <div class="text-center border-bottom pb-3 mb-3 mt-3">
                       <h3 class="h3 text-uppercase text-primary mb-1">Full Pass</h3>
-                      <span class="h2 mb-0" data-monthly-price>$1,799</span><small>MXN</small>
+                      <span class="h2 mb-0" data-monthly-price>$1,999</span><small>MXN</small>
                     </div>
                     <ul class="list-unstyled fs-sm pb-3 mb-3">
                       <li class="d-flex mb-2">
@@ -159,7 +159,7 @@
                     
                     <div class="text-center border-bottom pb-3 mb-3 mt-4">
                       <h3 class="h3 text-uppercase text-primary mb-1">Dancer Pass</h3>
-                      <span class="h2 mb-0" data-monthly-price>$1,699</span><small>MXN</small>
+                      <span class="h2 mb-0" data-monthly-price>$1,899</span><small>MXN</small>
                     </div>
                     <ul class="list-unstyled fs-sm pb-3 mb-3">
                       <li class="d-flex mb-2">
@@ -193,7 +193,7 @@
                     
                     <div class="text-center border-bottom pb-3 mb-3 mt-3">
                       <h3 class="h3 text-uppercase text-primary mb-1">Night Pass</h3>
-                      <span class="h2 mb-0" data-monthly-price>$1399</span><small>MXN</small>
+                      <span class="h2 mb-0" data-monthly-price>$1499</span><small>MXN</small>
                     </div>
                     <ul class="list-unstyled fs-sm pb-3 mb-3">
                       <li class="d-flex mb-2">
@@ -224,7 +224,7 @@
             </div>
           </div>
         </div>
-        <p class="lead text-center pb-3 pb-md-4 text-dark">Aparta con $500 pesos y líquida antes del 3 de febrero</p>
+        <p class="lead text-center pb-3 pb-md-4 text-dark">Aparta con $500 pesos y líquida antes del 01 de mayo del 2023</p>
         <div id="inscripciones" class="price-switch-wrapper mb-n2">
           <div class="table-responsive-xxl pt-md-3">
             <div class="row flex-nowrap pb-4">
