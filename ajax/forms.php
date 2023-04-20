@@ -583,6 +583,7 @@
                 $body = str_replace('$estado_p', $estado_p, $body);
                 $body = str_replace('$ciudad_p', $_POST['ciudad_p'], $body);
                 $body = str_replace('$nom_hotel', $nom_hotel, $body);
+                $body = str_replace('$habitacion', $_POST['tipo_habitacion'], $body);
 
                 $body = str_replace('$dateregistro', $dateregistro, $body);
                 
