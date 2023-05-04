@@ -225,6 +225,7 @@
           </div>
         </div>
         <p class="lead text-center pb-3 pb-md-4 text-dark">Aparta con $500 pesos y líquida antes del 01 de mayo del 2023</p>
+        <p class="lead text-center pb-3 pb-md-4 text-dark">Nota importante: Una vez realizado el depósito, deberá enviar su comprobante de pago a info@imperiomexico.com.mx con sus nombres completos de los asistentes</p>
         <div id="inscripciones" class="price-switch-wrapper mb-n2">
           <div class="table-responsive-xxl pt-md-3">
             <div class="row flex-nowrap pb-4">
