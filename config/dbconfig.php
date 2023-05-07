@@ -44,6 +44,48 @@ class Database{
 $basededatos = new Database;
 
 
+define('DBEL2023', 'eurosonl_elwsc2023');
+
+class Database_2023{
+
+    private $host;
+    private $db;
+    private $user;
+    private $password;
+    private $charset;
+
+    public function __construct(){
+        $this->host = constant('HOST');
+        $this->db = constant('DBEL2023');
+        $this->user = constant('USER');
+        $this->password = constant('PASSWORD');
+        // $this->charset = constant('CHARSET');
+    }
+
+    public function connect(){
+        try{
+            $connection= "mysql:host=" .$this->host. ";dbname=" .$this->db;
+            $options=[
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_EMULATE_PREPARES => false,
+                PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'",
+            ];
+            $pdo= new PDO($connection, $this->user, $this->password, $options);
+            // echo "Conexión exitosa";
+            return $pdo;
+        }
+        catch(PDOException $e)
+        {
+            echo "Conexión fallida: " . $e->getMessage();
+        }
+    }
+
+}
+
+// Validar conexión a base de datos
+$basededatos_el2023 = new Database_2023;
+
+
 // Base de datos Imperio México 2022
 define('HOSTimpmx', 'localhost');
 define('DBimpmx', 'eurosonl_impmx2023');
@@ -144,6 +186,8 @@ function fechaEs($fecha) {
 $randalf=generate_string($permitted_chars, 4);
 $tokenCompetidor=$randalf.$rand;
 
+
+$tokenEvento='DIJS9304';
 
 
 ?>

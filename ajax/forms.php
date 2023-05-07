@@ -35,12 +35,12 @@
 
         
 
-        $queryestado=$basededatosimpmx->connect()->prepare("SELECT id, categoria FROM tbl_categorias WHERE id='$id_categoria'");
+        $queryestado=$basededatosimpmx->connect()->prepare("SELECT id, categoria_es FROM tbl_categorias WHERE id='$id_categoria'");
         $queryestado->execute();
 
         $resultado=$queryestado->fetch(PDO::FETCH_OBJ);
 
-        return $resultado->categoria;
+        return $resultado->categoria_es;
 
     }
 

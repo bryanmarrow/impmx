@@ -75,13 +75,19 @@
             <select class="form-select" name="categoria_p" required>
                 <option value="">Seleccione una categoría</option>
                 <?php 
-                    $categorias=$basededatosimpmx->connect()->prepare("SELECT * FROM tbl_categorias WHERE tipo='$form' and status=0 order by categoria ASC");
-                    $categorias->execute();
-                    $Allcategorias=$categorias->fetchAll();
+                        $querycategorias="SELECT b.id, b.categoria_es
+                        FROM tbl_categorias_eventos a
+                        INNER JOIN tbl_categorias b ON a.idCategoria = b.id
+                        INNER JOIN tbl_eventos c ON a.idEvento = c.id
+                        WHERE c.token ='$tokenEvento' and b.tipo='$form'";
+                        $categorias=$basededatos_el2023->connect()->prepare($querycategorias);
+                        $categorias->execute();    
+                        $Allcategorias=$categorias->fetchAll();
                         foreach($Allcategorias as $categoria){
                 ?>
-                    <option value="<?= $categoria['id'] ?>" ><?= $categoria['categoria'] ?></option>
-                <?php } ?>
+                    <option value="<?= $categoria['id'] ?>" ><?= $categoria['categoria_es'] ?></option>
+                <?php } ?> 
+
             </select>
         </div>
     </div>
@@ -206,14 +212,19 @@
                         <label for="categoria"><?= index_categoria ?>:</label> <span class="text-muted">*</span>
                         <select class="form-select" name="categoria" required>
                             <option value=""><?= index_seleccione_su_categoria ?></option>
-                            <?php
-                                $categorias=$basededatosimpmx->connect()->prepare("SELECT * FROM tbl_categorias WHERE tipo='$form' and status=0 order by categoria ASC");
-                                $categorias->execute();
-                                $Allcategorias=$categorias->fetchAll();
+                            <?php 
+                                    $querycategorias="SELECT b.id, b.categoria_es
+                                    FROM tbl_categorias_eventos a
+                                    INNER JOIN tbl_categorias b ON a.idCategoria = b.id
+                                    INNER JOIN tbl_eventos c ON a.idEvento = c.id
+                                    WHERE c.token ='$tokenEvento' and b.tipo='$form'";
+                                    $categorias=$basededatos_el2023->connect()->prepare($querycategorias);
+                                    $categorias->execute();    
+                                    $Allcategorias=$categorias->fetchAll();
+                                    foreach($Allcategorias as $categoria){
                             ?>
-                            <?php foreach($Allcategorias as $categoria){ ?>
-                                <option value="<?= $categoria['id'] ?>" ><?= $categoria['categoria'] ?></option>
-                            <?php } ?>                           
+                                <option value="<?= $categoria['id'] ?>" ><?= $categoria['categoria_es'] ?></option>
+                            <?php } ?>                         
                         </select>
                     </div>
                 </div>
@@ -287,16 +298,19 @@
                         <label for="categoria_p" class="form-label"><?= index_categoria ?>:</label> <span class="text-muted">*</span>
                         <select class="form-select " name="categoria_p" required>
                             <option value=""><?= index_seleccione_su_categoria ?></option>
-                            <?php
-
-                                    $categorias=$basededatosimpmx->connect()->prepare("SELECT * FROM tbl_categorias WHERE tipo='$form' and status=0 order by categoria ASC");
-                                    $categorias->execute();
+                            <?php 
+                                    $querycategorias="SELECT b.id, b.categoria_es
+                                    FROM tbl_categorias_eventos a
+                                    INNER JOIN tbl_categorias b ON a.idCategoria = b.id
+                                    INNER JOIN tbl_eventos c ON a.idEvento = c.id
+                                    WHERE c.token ='$tokenEvento' and b.tipo='$form'";
+                                    $categorias=$basededatos_el2023->connect()->prepare($querycategorias);
+                                    $categorias->execute();    
                                     $Allcategorias=$categorias->fetchAll();
-                                    
+                                    foreach($Allcategorias as $categoria){
                             ?>
-                                <?php foreach($Allcategorias as $categoria){ ?>
-                                    <option value="<?= $categoria['id'] ?>" ><?= $categoria['categoria'] ?></option>
-                                <?php } ?>
+                                <option value="<?= $categoria['id'] ?>" ><?= $categoria['categoria_es'] ?></option>
+                            <?php } ?> 
                         </select>
                         <div class="invalid-feedback"><?= index_campo_requerido ?></div>
                     </div>
