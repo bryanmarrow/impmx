@@ -217,13 +217,13 @@
                       <div class="mega-dropdown-column">
                         <ul class="list-unstyled mb-3">
                           <li><a href="<?= $rootPath ?>#hotel" class="dropdown-item py-1">Ubicación</a></li>
-                          <li><a href="<?= $rootPath ?>reservacion" class="dropdown-item py-1">Reservacion</a></li>
+                          <li><a href="<?= $rootPath ?>reservacion" class="dropdown-item py-1 d-none">Reservacion</a></li>
                         </ul>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown d-none">
                   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Campeonato</a>
                   <div class="dropdown-menu">
                     <div class="d-lg-flex pt-lg-3">
@@ -239,7 +239,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none">
                   <a href="<?= $rootPath ?>#artistasinvitados" class="nav-link">Artistas Invitados</a>
                 </li>
                 <li class="nav-item">

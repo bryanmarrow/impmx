@@ -142,13 +142,13 @@ define('FOLDER_SOLISTAS', '../comprobantes/solistas/' );
 define('FOLDER_PAREJAS', '../comprobantes/parejas/' );
 define('FOLDER_GRUPOS', '../comprobantes/grupos/' );
 define('FOLDER_RESERVACION', '../comprobantes/reservacion/');
-define('YEAR_EVENT', 2023);
+define('YEAR_EVENT', 2024);
 define('NAME_EVENT', 'Imperio México');
 define('EMAIL_EVENT_CONTACTO','info@imperiomexico.com.mx');
-define('TAG_EVENT','#ImperioMéxico2023');
-define('TITLE_EVENT', 'Imperio México 2023 - ¡El camino a la victoria!');
-define('DESCRIPTION_EVENT', 'Mayo 18-21, 2023 Puebla, México | ¡Revolucionemos este Imperio!');
-define('IMAGE_EVENT', 'https://imperiomexico.com.mx/assets/img/og_image_imperiomexico2023.png');
+define('TAG_EVENT','#ImperioMéxico2024');
+define('TITLE_EVENT', 'Imperio México 2024 - ¡El camino a la victoria!');
+define('DESCRIPTION_EVENT', 'Mayo 16-19, 2024 Puebla, México | ¡El camino a la victoria!');
+define('IMAGE_EVENT', 'https://imperiomexico.com.mx/assets/img/og_image_imperiomexico2024.png');
 define('SEOTAGS_EVENT', 'salsa, bachata, imperio mexico, mexico, kizomba, campeonato salsa, congresos salsa');
 
 

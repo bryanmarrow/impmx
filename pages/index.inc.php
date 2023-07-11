@@ -1,44 +1,19 @@
-<div class="modal fade" id="dancerpass" tabindex="-1" aria-labelledby="dancerpass" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="assets/img/pases/dancerpass.jpg" class="rounded-3" alt="Dancer Pass">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="fp-np" tabindex="-1" aria-labelledby="fp-np" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="assets/img/pases/fp-np.jpg" class="rounded-3" alt="FP-NP">
-      </div>
-    </div>
-  </div>
-</div>
-
-
       <section class="container-fluid position-relative px-0 pt-5 mt-5 mt-lg-5">
         <div class="row g-0">
           <div class="col-xl-7 col-lg-6 pe-lg-5">
             <div class="d-flex h-100 pe-xl-4">
-              <video class="w-100" autoplay muted loop style="object-fit: cover;">
+              <!-- <video class="w-100" autoplay muted loop style="object-fit: cover;">
                 <source src="assets/img/promo_imperiomexico2023.mp4" type="video/mp4">
-              </video>
+              </video> -->
+              <img class="w-100 rounded-3" src="assets/img/fotoportada_impmx2024.png" style="object-fit: cover;" class="rounded-3" alt="FP-NP">
             </div>
           </div>
           <div class="col-xl-5 col-lg-6 pt-4 position-relative">
             <img src="assets/img/landing/conference/hero-bg.png" class="position-absolute top-50 translate-middle-y ms-lg-n4" width="866" alt="Background shapes">
             <div class="position-relative zindex-5 text-center text-lg-start px-2 px-lg-2 py-xl-3 py-xxl-4 mt-lg-5 mx-auto mx-lg-0" style="max-width: 530px;">
                 <a href=""><img src="assets/img/logo/logo-imperiomexico2022.png" alt=""></a>
-                <h2 class="h3 text-primary">Mayo 18-21, 2023</h2>
-                <h1 class="display-1 pb-lg-3 mb-3">Imperio México 2023</h1>
+                <h2 class="h3 text-primary">Mayo 16-19, 2024</h2>
+                <h1 class="display-1 pb-lg-3 mb-3">Imperio México 2024</h1>
               <div class="d-flex justify-content-center justify-content-lg-start text-start mb-2">
                 <i class="bx bx-map fs-4 text-primary me-2"></i>
                 <div class="fs-xl">Centro de Convenciones William O. Jenkins,<br>Puebla, México</div>
@@ -68,7 +43,7 @@
                 <div class="d-none d-sm-block d-lg-none" style="height: 400px;"></div>
                 <div class="d-sm-none" style="height: 300px;"></div>
                 <div class="jarallax position-absolute top-0 start-0 w-100 h-100 rounded-3 rounded-start-0 overflow-hidden" data-jarallax data-speed="0.5">
-                  <div class="jarallax-img" style="background-image: url(assets/img/conciertos_imperiomexico2023.png);"></div>
+                  <div class="jarallax-img" style="background-image: url(assets/img/conciertos_imperiomexico2024.png);"></div>
                 </div>
               </div>
             </div>
@@ -81,17 +56,17 @@
                 <!-- Card -->
                 <div class="card bg-dark border-light overflow-hidden py-4 px-2 p-sm-4">
                   <span class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255,255,255,.05);"></span>
-                  <div class="card-body position-relative zindex-5">
+                  <div class="card-body position-relative zindex-5">                    
                     <p class="fs-xl fw-bold text-primary text-uppercase mb-3">¡Concierto de Salsa y Bachata!</p>
-                    <h1 class="display-5 text-light pb-3 mb-3">La Máxima 79<br> y Dani J</h1>
+                    <h1 class="display-5 text-light pb-3 mb-3">Havana D'Primera<br> y Grupo Extra</h1>
+                    <p class="fs-xl fw-bold text-warning text-uppercase mb-3">¡Juntos por primera vez en México!</p>  
                     <p class="fs-lg text-light opacity-70 mb-5">Centro de Convenciones William O. Jenkins</p>
                     <div class="d-flex flex-column flex-sm-row mb-3">
-                      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO4urIbu?utm_source=generator" width="100%" height="180" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/05qiwKzU1RgkyqkEH1ZFlA?utm_source=generator" width="100%" height="180" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     
                     </div>
                     <div class="d-flex flex-column flex-sm-row mb-3">
-                      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2gVkIg?utm_source=generator" width="100%" height="180" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4L5SLCIDWPPNGzrLraYCOS?utm_source=generator" width="100%" height="180" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
 
                   </div>
@@ -106,7 +81,7 @@
      
      
 
-      <section id="pases" class="container py-5 my-md-2 my-lg-4 my-xl-5">
+      <section id="pases" class="container ">
         <h2 class="h1 text-center pb-3 pb-md-4">Costos</h2>
         <div class="price-switch-wrapper mb-n2">
           <div class="table-responsive-xxl pt-md-3">
@@ -116,29 +91,25 @@
                 <div class="card-body">
                     <div class="text-center border-bottom pb-3 mb-3 mt-3">
                       <h3 class="h3 text-uppercase text-primary mb-1">Full Pass</h3>
-                      <span class="h2 mb-0" data-monthly-price>$1,999</span><small>MXN</small>
+                      <span class="h2 mb-0" data-monthly-price>$2,000</span><small>MXN</small>
                     </div>
                     <ul class="list-unstyled fs-sm pb-3 mb-3">
                       <li class="d-flex mb-2">
                         <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Campeonato Nacional
+                        Pase Asistente Público General
                       </li>
                       <li class="d-flex mb-2">
                         <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Shows Nacionales e Internacionales
+                        Sociales, Shows y Talleres Nacionales e internacionales
                       </li>
                       <li class="d-flex mb-2">
                         <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Conciertos Internacionales<br> "La Máxima 79 y Dani J"
+                        Conciertos Internacionales de<br> "Grupo Extra y Havana D'Primera"
                       </li>
                       <li class="d-flex mb-2">
                         <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Workshops Internacionales
-                      </li>
-                      <li class="d-flex mb-2">
-                        <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Social y After Parties
-                      </li>
+                        No incluye seminarios
+                      </li>                      
                     </ul>
                     
                       <!-- <a  data-bs-toggle="modal" data-bs-target="#fp-np" class="btn btn-primary shadow-primary w-100">Más información</a> -->
@@ -146,7 +117,48 @@
                 </div>
               </div>
 
-              
+              <div class="col">
+                <div class="card bg-transparent shadow-sm p-xxl-3" style="min-width: 18rem;">
+                  <span class="badge bg-warning d-flex align-items-center fs-sm position-absolute top-0 start-0 rounded-start-0 mt-3 mb-2">
+                    <i class="bx bx-star fs-base opacity-75 me-1"></i>
+                    La mejor opción
+                  </span>
+                <div class="card-body">
+                    
+                    <div class="text-center border-bottom pb-3 mb-3 mt-3">
+                      <h3 class="h3 text-uppercase text-danger mb-1">VIP Pass</h3>
+                      <span class="h2 mb-0" data-monthly-price>$2500</span><small>MXN</small>
+                    </div>
+                    <ul class="list-unstyled fs-sm pb-3 mb-3">
+                      <li class="d-flex mb-2">
+                        <i class="bx bx-check fs-xl text-primary me-1"></i>
+                        Pase Asistente Público General
+                      </li>
+                      <li class="d-flex mb-2">
+                        <i class="bx bx-check fs-xl text-primary me-1"></i>
+                        Asiento preferencial VIP duarante shows y competencias
+                      </li>
+                      <li class="d-flex mb-2">
+                        <i class="bx bx-check fs-xl text-primary me-1"></i>
+                        Playera conmemorativa Imperio México 2024
+                      </li>
+                      <li class="d-flex mb-2">
+                        <i class="bx bx-check fs-xl text-primary me-1"></i>
+                        Sociales, Shows y Talleres Nacionales e internacionales
+                      </li>
+                      <li class="d-flex mb-2">
+                        <i class="bx bx-check fs-xl text-primary me-1"></i>
+                        Conciertos Internacionales de<br> "Grupo Extra y Havana D'Primera"
+                      </li>
+                      <li class="d-flex mb-2">
+                        <i class="bx bx-check fs-xl text-primary me-1"></i>
+                        No incluye seminarios
+                      </li>                      
+                    </ul>
+                    <!-- <a data-bs-toggle="modal" data-bs-target="#fp-np" class="btn btn-primary shadow-primary w-100">Más información</a> -->
+                  </div>
+                </div>
+              </div>
 
               
               <div class="col">
@@ -159,72 +171,67 @@
                     
                     <div class="text-center border-bottom pb-3 mb-3 mt-4">
                       <h3 class="h3 text-uppercase text-primary mb-1">Dancer Pass</h3>
-                      <span class="h2 mb-0" data-monthly-price>$1,899</span><small>MXN</small>
+                      <span class="h2 mb-0" data-monthly-price>$1,800</span><small>MXN</small><br>
+                      <span class="text-danger">(NO INCLUYE INSCRIPCIONES)</span>
                     </div>
                     <ul class="list-unstyled fs-sm pb-3 mb-3">
                       <li class="d-flex mb-2">
                         <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Campeonato Nacional
+                        Pase para bailarines en competencia y/o show                        
+                      </li>                      
+                      <li class="d-flex mb-2">
+                        <i class="bx bx-check fs-xl text-primary me-1"></i>
+                        Sociales, Shows y Talleres Nacionales e internacionales
                       </li>
                       <li class="d-flex mb-2">
                         <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Shows Nacionales e Internacionales
+                        Conciertos Internacionales de<br> "Grupo Extra y Havana D'Primera"
                       </li>
                       <li class="d-flex mb-2">
                         <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Conciertos Internacionales<br> "La Máxima 79 y Dani J"
-                      </li>
-                      <li class="d-flex mb-2">
-                        <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Workshops Internacionales
-                      </li>
-                      <li class="d-flex mb-2">
-                        <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Social y After Parties
-                      </li>
+                        No incluye seminarios
+                      </li>                      
                     </ul>
                     <!-- <a  data-bs-toggle="modal" data-bs-target="#dancerpass" class="btn btn-primary shadow-primary w-100">Más información</a> -->
                   </div>
                 </div>
               </div>
+
               <div class="col">
-                <div class="card bg-transparent shadow-sm p-xxl-3" style="min-width: 18rem;">
-                <div class="card-body">
+                <div class="card bg-light position-relative border-danger shadow-danger shadow-dark-mode-none p-xxl-3" style="min-width: 18rem;">                  
+                  <div class="card-body">
                     
-                    <div class="text-center border-bottom pb-3 mb-3 mt-3">
+                    <div class="text-center border-bottom pb-3 mb-3 mt-4">
                       <h3 class="h3 text-uppercase text-primary mb-1">Night Pass</h3>
-                      <span class="h2 mb-0" data-monthly-price>$1499</span><small>MXN</small>
+                      <span class="h2 mb-0" data-monthly-price>$1,600</span><small>MXN</small><br>                      
                     </div>
                     <ul class="list-unstyled fs-sm pb-3 mb-3">
                       <li class="d-flex mb-2">
                         <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Campeonato Nacional
+                        Pase para bailarines en competencia y/o show                        
+                      </li>                      
+                      <li class="d-flex mb-2">
+                        <i class="bx bx-check fs-xl text-primary me-1"></i>
+                        Sociales, Shows Nacionales e internacionales
                       </li>
                       <li class="d-flex mb-2">
                         <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Shows Nacionales e Internacionales
+                        Conciertos Internacionales de<br> "Grupo Extra y Havana D'Primera"
                       </li>
                       <li class="d-flex mb-2">
                         <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Conciertos Internacionales<br> "La Máxima 79 y Dani J"
-                      </li>
-                      <li class="d-flex mb-2">
-                        <i class="bx bx-check fs-xl text-primary me-1"></i>
-                        Social y After Parties
-                      </li>
-                      <li class="d-flex mb-2">
-                        <i class="bx bx-x fs-xl text-danger me-1"></i>
-                        Workshops Internacionales
-                      </li>
+                        No incluye seminarios
+                      </li>                      
                     </ul>
-                    <!-- <a data-bs-toggle="modal" data-bs-target="#fp-np" class="btn btn-primary shadow-primary w-100">Más información</a> -->
+                    <!-- <a  data-bs-toggle="modal" data-bs-target="#dancerpass" class="btn btn-primary shadow-primary w-100">Más información</a> -->
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
-        <p class="lead text-center pb-3 pb-md-4 text-dark">Aparta con $500 pesos y líquida antes del 01 de mayo del 2023</p>
+        <p class="lead text-center pb-3 pb-md-4 text-dark">Aparta con $500 pesos <br> Vigencia para apartar: 01 de Septiembre 2023 - Vigencia para liquidar: 01 de Noviembre 2023</p>
         <p class="lead text-center pb-3 pb-md-4 text-dark">Nota importante: Una vez realizado el depósito, deberá enviar su comprobante de pago a info@imperiomexico.com.mx con sus nombres completos de los asistentes</p>
         <div id="inscripciones" class="price-switch-wrapper mb-n2">
           <div class="table-responsive-xxl pt-md-3">
@@ -279,7 +286,7 @@
       </section>
 
       
-      <section class="container py-5">
+      <section class="container">
         <div class="row">
           <div class="col-xl-12">
               <!-- Accordion: Default style -->
@@ -287,12 +294,16 @@
                 <div class="accordion-item">
                   <h1 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <span class="h4">Datos Bancarios</span>
-                    </button>
+                      <span class="h4">Datos Bancarios</span>                                         
+                    </button>                    
                   </h1>
                   <div class="accordion-collapse collapse show" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionDefault">
-                    <div class="accordion-body">
-                      <dl class="row mx-auto">
+                    <div class="accordion-body">                                          
+                      <dl class="row mx-auto">                        
+                        <dt class="col-sm-8">
+                          Para pago de FULL PASS, DANCER PASS, NIGHT PASS, NIGHT PASS, Paquetes e Inscripciones
+                        </dt>
+                        <dd></dd>
                         <dt class="col-sm-3">No. de cuenta:</dt>
                         <dd class="col-sm-9">5125245</dd>
                         <dt class="col-sm-3">CLABE Interbancaria:</dt>
@@ -302,7 +313,7 @@
                         <dt class="col-sm-3 text-truncate">Banco</dt>
                         <dd class="col-sm-9">Banamex</dd>
                           </dl>
-                        </dd>
+                        </dd>                        
                       </dl>
                     </div>
                   </div>
@@ -311,31 +322,7 @@
           </div>
         </div>
       </section>
-      
-
-      <section id="artistasinvitados" class="container py-5 py-md-6 py-lg-7">
-        <h2 class="h1 text-center pb-3 pb-md-4">Artistas Invitados</h2>
-        <div class="row align-items-center pt-1 pt-md-0">
-          <div class="col-md-6">
-            <img class="d-block mx-auto" width="600" src="assets\img\artistas\poster_dancers.jpeg" alt="Features">
-          </div>
-          <div class="col-md-6">
-            <img class="d-block mx-auto" width="600" src="assets\img\artistas\poster_dancers2.jpeg" alt="Features">
-          </div>
-        </div>
-      </section>
-
-      
-
-      <section id="capacitacion" class="container py-5 py-md-6 py-lg-7">
-        <h2 class="h1 text-center pb-3 pb-md-4">Capacitación Internacional</h2>
-        <div class="row align-items-center pt-1 pt-md-0">
-          <div class="col-md-12">
-            <img class="d-block mx-auto" width="600" src="assets\img\artistas\certificacion_challenge.jpeg" alt="Features">
-          </div>
-        </div>
-      </section>
-
+    
 
       <!-- Location -->
       <section id="sede" class="container py-5">
@@ -367,22 +354,22 @@
       <section id="hotel" class="container py-5 py-md-6 py-lg-7">
         <div class="row py-3">
           <div class="col-lg-4 col-md-5 mb-5 mb-md-0">
-            <h2 class="mb-3">Hotel City Express</h2>
+            <h2 class="mb-3">Hotel 5 de Mayo</h2>
             <h3 class="h6">Puebla - Centro</h3>
             <ul class="list-unstyled mb-5">
-              <li class="mb-0">C. 10 Nte. 1406, El Alto, 72000 Puebla, Pue.</li>
+              <li class="mb-0">404 Boulevard Heroes del 5 de Mayo Xanenetla, Centro de Puebla, 72290 Puebla, México</li>
               <li class="mb-0">Puebla, México</li>
             </ul>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4032707174415!2d-98.19119868406847!3d19.045999057861838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86886d53f5cc0e33%3A0x1119496b33d57a51!2sCity%20Express%20Puebla%20Centro!5e0!3m2!1ses!2smx!4v1674675980959!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2720004494486!2d-98.19301612400633!3d19.0517749527311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0e2e58c062d%3A0xb5f76f314e4debaf!2sHotel%205%20de%20Mayo!5e0!3m2!1ses!2smx!4v1689081187381!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="col-xl-6 col-md-7 offset-xl-2 offset-lg-1 px-sm-3">
             <div class="row mx-n2 mx-sm-n3 cs-gallery">
               <div class="col-12 px-2 px-md-3">
                 
                   <a class="cs-gallery-item rounded-lg mb-3 mb-md-0"
-                    href="assets\img\hotel\hotel_cityexpress.jpeg"
+                    href="assets\img\hotel\hotel5demayo.png"
                     data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Conference restaurant&lt;/h6&gt;">
-                    <img src="assets\img\hotel\hotel_cityexpress.jpeg" alt="Gallery thumbnail">
+                    <img src="assets\img\hotel\hotel5demayo.png" alt="Gallery thumbnail">
                   </a>
                 <div class="d-none d-md-block mb-grid-gutter"></div>
                 
